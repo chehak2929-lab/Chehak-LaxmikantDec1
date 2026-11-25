@@ -3,38 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-  <title>|| श्री गणेशाय नमः || Ladies Sangeet — Chehak &amp; Laxmikant (1st December, 2026)</title>
-  <meta name="description" content="Mrs. Parveen Devi cordially solicits your gracious presence & blessings on the auspicious occasion of Ladies Sangeet on the forthcoming marriage of Chehak with Laxmikant on Tuesday, 1st December, 2026 at A. M. Banquet, Sanour Road, Patiala." />
+  <title>|| श्री गणेशाय नमः || Ladies Sangeet Invitation — Chehak &amp; Laxmikant (Tuesday, 1st December, 2026)</title>
+  <meta name="description" content="Smt. Parveen Devi (W/o. Late Sh. Tarsem Chand Singla) cordially solicits your gracious presence & blessings on the auspicious occasion on Ladies Sangeet on the forthcoming marriage of her loving grand daughter Chehak with Laxmikant on Tuesday, 1st December, 2026 at A. M. Banquet, Sanour Road, Patiala." />
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Typography & Devanagari Fonts -->
+  <!-- Serif, Display & Devanagari Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600;1,700&family=Great+Vibes&family=Noto+Serif+Devanagari:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600;1,700&family=Great+Vibes&family=Noto+Serif+Devanagari:wght@600;700&display=swap" rel="stylesheet" />
 
   <script>
+    // Configure high-contrast Royal Ivory, Antique Gold, Deep Crimson-Maroon & Warm Sandalwood theme tokens
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            midnightIndigo: '#0B0924',
-            royalPlum: '#2E0A38',
-            plumVelvet: '#47104E',
-            magentaRose: '#D92662',
-            roseGold: '#E8998D',
-            champagneGold: '#D4AF37',
-            goldShimmer: '#F9E596',
-            sangeetCream: '#FFF8F3',
-            festiveParchment: '#F9EEF5',
-            dholAmber: '#F59E0B',
-            emeraldStage: '#0D6E4E',
+            crimsonMaroon: '#5E0B1A',
+            deepMaroon: '#3B0611',
+            sandalwoodDark: '#26140D',
+            antiqueGold: '#C6952B',
+            goldShimmer: '#F6DC8C',
+            royalIvory: '#FFFDF8',
+            warmSandal: '#FBF3E4',
+            parchmentGold: '#F3E5CA',
+            emeraldRsvp: '#14532D',
+            stageMidnight: '#160722',
           },
           fontFamily: {
             hindi: ['"Noto Serif Devanagari"', 'serif'],
             display: ['"Cinzel Decorative"', 'serif'],
-            playfair: ['"Playfair Display"', 'serif'],
+            cinzel: ['"Cinzel"', 'serif'],
             cormorant: ['"Cormorant Garamond"', 'serif'],
             script: ['"Great Vibes"', 'cursive'],
           },
@@ -45,26 +45,27 @@
 
   <style>
     /* ========================================================================
-       FESTIVE LADIES SANGEET STAGE & GOLD FOIL DESIGN SYSTEM
+       HIGH-CONTRAST ROYAL IVORY, ANTIQUE GOLD, DEEP CRIMSON-MAROON &
+       WARM SANDALWOOD DESIGN SYSTEM
     ======================================================================== */
     body {
-      background-color: #0b0924;
+      background-color: #26140D;
       background-image:
-        radial-gradient(circle at 15% 12%, rgba(217, 38, 98, 0.24) 0%, transparent 45%),
-        radial-gradient(circle at 85% 20%, rgba(212, 175, 55, 0.20) 0%, transparent 45%),
-        radial-gradient(circle at 50% 90%, rgba(71, 16, 78, 0.55) 0%, transparent 60%),
+        radial-gradient(circle at 18% 12%, rgba(198, 149, 43, 0.24) 0%, transparent 45%),
+        radial-gradient(circle at 82% 86%, rgba(198, 149, 43, 0.18) 0%, transparent 48%),
+        radial-gradient(circle at 50% 42%, rgba(94, 11, 26, 0.72) 0%, transparent 72%),
         repeating-linear-gradient(
           45deg,
-          rgba(249, 229, 150, 0.025) 0px,
-          rgba(249, 229, 150, 0.025) 1px,
+          rgba(246, 220, 140, 0.025) 0px,
+          rgba(246, 220, 140, 0.025) 1px,
           transparent 1px,
-          transparent 16px
+          transparent 18px
         );
       overflow-x: hidden;
     }
 
-    /* Full-Viewport Floating Musical Notes & Gold Sparkles Canvas */
-    #sangeet-canvas {
+    /* Full-Viewport Confetti & Golden Sparkles Canvas */
+    #festive-confetti-canvas {
       position: fixed;
       inset: 0;
       width: 100%;
@@ -74,576 +75,522 @@
     }
 
     /* ========================================================================
-       SANGEET STAGE CURTAIN ENTRANCE OVERLAY
+       SLIDING CURTAIN REVEAL ("OPEN SANGEET INVITATION")
     ======================================================================== */
-    .stage-curtain {
-      transition: transform 1.4s cubic-bezier(0.76, 0, 0.24, 1);
+    .velvet-sangeet-curtain {
+      transition: transform 1.35s cubic-bezier(0.76, 0, 0.24, 1);
       background:
         repeating-linear-gradient(
           90deg,
-          #24062e 0px,
-          #460d52 22px,
-          #190421 44px,
-          #390a44 66px
+          #3B0611 0px,
+          #5E0B1A 22px,
+          #26140D 44px,
+          #4D0916 66px
         );
     }
-    .stage-open .curtain-left {
-      transform: translateX(-103%);
+    .curtains-parted .curtain-left {
+      transform: translateX(-104%);
     }
-    .stage-open .curtain-right {
-      transform: translateX(103%);
+    .curtains-parted .curtain-right {
+      transform: translateX(104%);
     }
 
-    @keyframes stagePulse {
+    @keyframes sealPulse {
       0%, 100% {
         transform: scale(1);
         box-shadow:
-          0 0 0 0 rgba(249, 229, 150, 0.65),
-          0 0 38px rgba(217, 38, 98, 0.55),
-          0 0 24px rgba(212, 175, 55, 0.45);
+          0 0 0 0 rgba(246, 220, 140, 0.65),
+          0 0 36px rgba(198, 149, 43, 0.55);
       }
       50% {
-        transform: scale(1.05);
+        transform: scale(1.04);
         box-shadow:
-          0 0 0 18px rgba(249, 229, 150, 0),
-          0 0 55px rgba(217, 38, 98, 0.8),
-          0 0 36px rgba(212, 175, 55, 0.7);
+          0 0 0 16px rgba(246, 220, 140, 0),
+          0 0 54px rgba(246, 220, 140, 0.85);
       }
     }
-    .sangeet-pass-btn {
-      animation: stagePulse 2.4s ease-in-out infinite;
+    .open-sangeet-btn {
+      animation: sealPulse 2.5s ease-in-out infinite;
     }
 
     /* ========================================================================
-       INVITATION CARD & GOLD FILIGREE STYLING
+       INVITATION CARD & ANTIQUE GOLD FILIGREE BORDER
     ======================================================================== */
-    .sangeet-card {
-      background-color: #fff8f3;
+    .sangeet-invitation-card {
+      background-color: #FFFDF8;
       background-image:
-        radial-gradient(ellipse at top, rgba(249, 229, 150, 0.34) 0%, transparent 55%),
-        radial-gradient(ellipse at bottom left, rgba(217, 38, 98, 0.08) 0%, transparent 50%),
-        linear-gradient(180deg, rgba(255, 248, 243, 0.98) 0%, rgba(249, 238, 245, 0.98) 100%);
+        radial-gradient(ellipse at top, rgba(246, 220, 140, 0.28) 0%, transparent 55%),
+        radial-gradient(ellipse at bottom, rgba(198, 149, 43, 0.12) 0%, transparent 55%),
+        linear-gradient(180deg, rgba(255, 253, 248, 0.99) 0%, rgba(251, 243, 228, 0.98) 100%);
       box-shadow:
-        0 30px 80px -12px rgba(0, 0, 0, 0.88),
-        0 0 0 1px rgba(212, 175, 55, 0.8);
+        0 30px 82px -14px rgba(0, 0, 0, 0.9),
+        0 0 0 1px rgba(198, 149, 43, 0.88);
       position: relative;
     }
 
-    .sangeet-filigree {
-      border: 2px solid #d4af37;
+    .antique-gold-frame {
+      border: 2px solid #C6952B;
       position: relative;
     }
-    .sangeet-filigree::after {
+    .antique-gold-frame::after {
       content: "";
       position: absolute;
       inset: 6px;
-      border: 1px solid rgba(217, 38, 98, 0.32);
+      border: 1px solid rgba(94, 11, 26, 0.24);
       border-radius: inherit;
       pointer-events: none;
     }
 
-    /* Shimmering Gold & Magenta Foil Text */
-    .sangeet-foil-text {
-      background: linear-gradient(
-        115deg,
-        #8c5812 0%,
-        #d92662 28%,
-        #f9e596 52%,
-        #b8821e 76%,
-        #f9e596 100%
+    /* ========================================================================
+       AUTOMATIC SMOOTH COLOR-SHIFTING SHIMMER ON COUPLE NAMES
+       (NO MANUAL COLOR-PICKER BUTTONS)
+    ======================================================================== */
+    .shimmer-couple-name {
+      background-image: linear-gradient(
+        95deg,
+        #5E0B1A 0%,
+        #B45309 24%,
+        #9D174D 48%,
+        #0F766E 72%,
+        #7C2D12 90%,
+        #5E0B1A 100%
       );
-      background-size: 220% auto;
+      background-size: 280% auto;
       -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
       -webkit-text-fill-color: transparent;
-      animation: sangeetFoil 5.5s linear infinite;
+      animation: coupleNameHueShift 7s ease-in-out infinite;
     }
-    @keyframes sangeetFoil {
-      to {
-        background-position: 220% center;
+    @keyframes coupleNameHueShift {
+      0% {
+        background-position: 0% center;
+      }
+      50% {
+        background-position: 100% center;
+      }
+      100% {
+        background-position: 0% center;
       }
     }
 
-    /* Animated Equalizer Bars */
-    @keyframes beatBar {
-      0%, 100% { height: 5px; }
-      50% { height: 20px; }
+    /* Audio Equalizer Bars */
+    @keyframes beatBounce {
+      0%, 100% { height: 4px; }
+      50% { height: 15px; }
     }
-    .beat-active .eq-bar:nth-child(1) { animation: beatBar 0.48s ease-in-out infinite; }
-    .beat-active .eq-bar:nth-child(2) { animation: beatBar 0.34s ease-in-out infinite 0.08s; }
-    .beat-active .eq-bar:nth-child(3) { animation: beatBar 0.56s ease-in-out infinite 0.16s; }
-    .beat-active .eq-bar:nth-child(4) { animation: beatBar 0.40s ease-in-out infinite 0.12s; }
-    .beat-active .eq-bar:nth-child(5) { animation: beatBar 0.52s ease-in-out infinite 0.22s; }
+    .sangeet-playing .beat-bar:nth-child(1) { animation: beatBounce 0.48s ease-in-out infinite; }
+    .sangeet-playing .beat-bar:nth-child(2) { animation: beatBounce 0.34s ease-in-out infinite 0.08s; }
+    .sangeet-playing .beat-bar:nth-child(3) { animation: beatBounce 0.54s ease-in-out infinite 0.16s; }
+    .sangeet-playing .beat-bar:nth-child(4) { animation: beatBounce 0.38s ease-in-out infinite 0.06s; }
 
-    /* Rotating Stage Mandala */
-    @keyframes spinMandala {
+    /* Dhol Hit Bounce */
+    @keyframes dholThump {
+      0%, 100% { transform: scale(1) rotate(0deg); }
+      30% { transform: scale(1.25) rotate(-10deg); }
+      60% { transform: scale(1.15) rotate(10deg); }
+    }
+    .dhol-thump {
+      animation: dholThump 0.45s ease-out;
+    }
+
+    /* Rotating Gold Halo */
+    @keyframes haloTurn {
       from { transform: rotate(0deg); }
       to { transform: rotate(360deg); }
     }
-    .stage-mandala {
+    .halo-turn {
       transform-origin: center;
-      animation: spinMandala 44s linear infinite;
+      animation: haloTurn 54s linear infinite;
     }
 
-    /* Tap Celebration Burst Particle */
-    .burst-particle {
-      position: fixed;
-      pointer-events: none;
-      z-index: 60;
-      animation: burstFly 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-    }
-    @keyframes burstFly {
-      0% {
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(0.45) rotate(0deg);
-      }
-      100% {
-        opacity: 0;
-        transform: translate(var(--tx), var(--ty)) scale(1.25) rotate(160deg);
-      }
+    /* Sangeet Night Stage Canvas */
+    #sangeet-stage-canvas {
+      display: block;
+      width: 100%;
+      height: 255px;
+      border-radius: 1rem;
+      background: radial-gradient(circle at 50% 18%, #3B0611 0%, #1B092E 60%, #0D0518 100%);
+      cursor: pointer;
+      touch-action: manipulation;
     }
 
     /* Scroll Reveal */
-    .reveal {
+    .reveal-block {
       opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.75s ease-out, transform 0.75s ease-out;
+      transform: translateY(16px);
+      transition: opacity 0.7s ease-out, transform 0.7s ease-out;
     }
-    .reveal.in-view {
+    .reveal-block.visible {
       opacity: 1;
       transform: translateY(0);
     }
   </style>
 </head>
-<body class="text-royalPlum font-cormorant antialiased selection:bg-magentaRose selection:text-white pb-24">
+<body class="text-sandalwoodDark font-cormorant antialiased selection:bg-crimsonMaroon selection:text-goldShimmer pb-16">
 
-  <!-- Full-Viewport Floating Musical Notes & Gold Sparkles Canvas -->
-  <canvas id="sangeet-canvas" aria-hidden="true"></canvas>
+  <!-- Full-Viewport Sangeet Confetti & Golden Sparkles Canvas -->
+  <canvas id="festive-confetti-canvas" aria-hidden="true"></canvas>
 
   <!-- ========================================================================
-       INTERACTIVE SANGEET CURTAIN / STAGE ENTRANCE OVERLAY
+       SLIDING CURTAIN REVEAL ("OPEN SANGEET INVITATION")
   ======================================================================== -->
   <div
-    id="stage-entrance"
+    id="sangeet-curtain-overlay"
     class="fixed inset-0 z-50 flex items-center justify-center overflow-hidden cursor-pointer select-none"
     role="dialog"
     aria-modal="true"
-    aria-label="Enter Ladies Sangeet Invitation"
+    aria-label="Open Ladies Sangeet Invitation"
   >
-    <!-- Left Sangeet Stage Curtain -->
-    <div class="stage-curtain curtain-left absolute inset-y-0 left-0 w-1/2 border-r-2 border-champagneGold shadow-2xl">
-      <div class="hidden sm:block absolute top-1/2 right-4 -translate-y-1/2 w-2.5 h-36 rounded-full bg-gradient-to-b from-goldShimmer via-magentaRose to-champagneGold opacity-85"></div>
-    </div>
+    <!-- Left Velvet Curtain -->
+    <div class="velvet-sangeet-curtain curtain-left absolute inset-y-0 left-0 w-1/2 border-r-2 border-antiqueGold shadow-2xl"></div>
 
-    <!-- Right Sangeet Stage Curtain -->
-    <div class="stage-curtain curtain-right absolute inset-y-0 right-0 w-1/2 border-l-2 border-champagneGold shadow-2xl">
-      <div class="hidden sm:block absolute top-1/2 left-4 -translate-y-1/2 w-2.5 h-36 rounded-full bg-gradient-to-b from-goldShimmer via-magentaRose to-champagneGold opacity-85"></div>
-    </div>
+    <!-- Right Velvet Curtain -->
+    <div class="velvet-sangeet-curtain curtain-right absolute inset-y-0 right-0 w-1/2 border-l-2 border-antiqueGold shadow-2xl"></div>
 
-    <!-- Center Stage Entrance Content -->
-    <div id="entrance-stage-content" class="relative z-10 flex flex-col items-center text-center px-5 max-w-md transition-opacity duration-500">
-      <p class="font-hindi text-goldShimmer text-xl sm:text-2xl font-bold tracking-wider drop-shadow mb-1">
+    <!-- Center Seal & Open Sangeet Invitation Trigger -->
+    <div id="curtain-center" class="relative z-10 flex flex-col items-center text-center px-5 max-w-md transition-opacity duration-500">
+      <p class="font-hindi text-goldShimmer text-xl sm:text-2xl font-bold tracking-wider drop-shadow mb-2">
         || श्री गणेशाय नमः ||
       </p>
-      <p class="font-sans text-[11px] uppercase tracking-[0.24em] text-roseGold font-bold mb-5">
-        ♪ Ladies Sangeet Night ♪
+      <p class="font-cinzel text-[11px] uppercase tracking-[0.2em] text-warmSandal font-semibold mb-5">
+        Tuesday, 1st December, 2026 • Patiala
       </p>
 
-      <!-- Interactive Sangeet Stage Pass Button -->
       <button
-        id="enter-stage-btn"
+        id="open-sangeet-btn"
         type="button"
-        class="sangeet-pass-btn group relative w-44 h-44 sm:w-48 sm:h-48 rounded-full bg-gradient-to-br from-goldShimmer via-champagneGold to-magentaRose p-1.5 focus:outline-none"
+        class="open-sangeet-btn group relative w-48 h-48 sm:w-52 sm:h-52 rounded-full bg-gradient-to-br from-goldShimmer via-antiqueGold to-crimsonMaroon p-1.5 focus:outline-none"
       >
-        <div class="w-full h-full rounded-full bg-gradient-to-b from-plumVelvet via-royalPlum to-midnightIndigo border-2 border-goldShimmer flex flex-col items-center justify-center px-3 text-center transition-transform duration-300 group-hover:scale-95">
-          <span class="font-display text-goldShimmer text-3xl sm:text-4xl font-bold tracking-wider">
+        <div class="w-full h-full rounded-full bg-royalIvory border-2 border-crimsonMaroon flex flex-col items-center justify-center px-4 text-center transition-transform duration-300 group-hover:scale-95">
+          <span class="font-display text-crimsonMaroon text-3xl sm:text-4xl font-bold tracking-wider">
             C &amp; L
           </span>
-          <span class="h-px w-20 bg-gradient-to-r from-transparent via-roseGold to-transparent my-2"></span>
-          <span class="font-sans text-[11px] sm:text-xs uppercase tracking-[0.16em] text-white font-bold leading-snug">
-            Tap to Raise<br />Stage Curtain
+          <span class="h-px w-24 bg-antiqueGold my-2"></span>
+          <span class="font-sans text-xs uppercase tracking-[0.11em] text-crimsonMaroon font-extrabold leading-snug">
+            OPEN SANGEET<br />INVITATION
           </span>
-          <span class="mt-1.5 text-[10px] text-goldShimmer font-sans font-medium">
-            🥁 Dhol &amp; Sangeet Beat
+          <span class="mt-1.5 text-[11px] text-sandalwoodDark font-sans font-semibold">
+            🥁 Bollywood Sangeet Beat
           </span>
         </div>
       </button>
 
-      <p class="mt-6 font-playfair italic text-goldShimmer text-xl sm:text-2xl">
+      <p class="mt-6 font-cinzel text-goldShimmer text-xl sm:text-2xl font-bold tracking-wide drop-shadow">
         Chehak &amp; Laxmikant
       </p>
-      <p class="text-xs font-sans text-white/80 mt-1">
-        Tuesday, 1st December, 2026 • 7:30 p.m. • Patiala
+      <p class="text-xs font-sans text-warmSandal/95 mt-1 font-medium">
+        Tuesday, 1st December, 2026 • Patiala
       </p>
     </div>
   </div>
 
   <!-- ========================================================================
-       FLOATING TOP SANGEET MUSIC CONTROLLER & SHARE BAR
+       CLEAN SINGLE-ROW TOP AUDIO BAR
+       (Play/Pause toggle, Bollywood Sangeet [default], Strings, Dholak,
+        Dhol Hit trigger & compact volume slider — no MP3 uploader, no Share
+        buttons, no broken/cluttered top controls)
   ======================================================================== -->
-  <header class="fixed top-3 inset-x-0 z-40 px-3 pointer-events-none">
-    <div class="max-w-xl mx-auto flex items-center justify-between gap-2">
-      <!-- Music Play/Pause & Mode Cycle Pill -->
-      <div class="pointer-events-auto flex items-center rounded-full bg-midnightIndigo/95 border border-champagneGold/85 shadow-xl backdrop-blur-md p-1">
+  <header class="sticky top-2.5 z-40 px-2.5 sm:px-4 pt-1">
+    <div class="max-w-3xl mx-auto">
+      <div
+        role="region"
+        aria-label="Sangeet Audio Controls"
+        class="flex items-center justify-between gap-1.5 overflow-x-auto rounded-full bg-royalIvory border-2 border-antiqueGold shadow-lg px-2.5 py-1.5"
+      >
+        <!-- Play / Pause Toggle -->
         <button
           id="sangeet-play-btn"
           type="button"
-          aria-label="Play or Pause Sangeet Music"
-          class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-magentaRose to-plumVelvet text-white text-xs font-sans font-bold hover:brightness-110 transition active:scale-95"
+          aria-pressed="false"
+          class="shrink-0 flex items-center gap-1.5 px-3 py-1 rounded-full bg-crimsonMaroon text-white font-sans text-xs font-bold hover:bg-deepMaroon transition active:scale-95"
         >
-          <span id="top-eq" class="flex items-end gap-[2px] h-3.5 w-4" aria-hidden="true">
-            <span class="eq-bar w-[2.5px] h-1.5 bg-goldShimmer rounded-full"></span>
-            <span class="eq-bar w-[2.5px] h-2.5 bg-goldShimmer rounded-full"></span>
-            <span class="eq-bar w-[2.5px] h-1.5 bg-goldShimmer rounded-full"></span>
-            <span class="eq-bar w-[2.5px] h-2 bg-goldShimmer rounded-full"></span>
+          <span id="sangeet-eq" class="flex items-end gap-[2px] h-3.5 w-3.5" aria-hidden="true">
+            <span class="beat-bar w-[2px] h-1 bg-goldShimmer rounded-full"></span>
+            <span class="beat-bar w-[2px] h-2 bg-goldShimmer rounded-full"></span>
+            <span class="beat-bar w-[2px] h-1 bg-goldShimmer rounded-full"></span>
+            <span class="beat-bar w-[2px] h-1.5 bg-goldShimmer rounded-full"></span>
           </span>
-          <span id="top-play-label">Play Beat</span>
+          <span id="sangeet-play-label">Play</span>
         </button>
 
+        <!-- Sound Modes: Bollywood Sangeet (Default), Strings, Dholak -->
+        <div class="shrink-0 flex items-center gap-1" role="group" aria-label="Sangeet Music Mode">
+          <button
+            type="button"
+            data-tune="bollywood-sangeet"
+            aria-pressed="true"
+            class="sangeet-tune-btn px-2.5 py-1 rounded-full bg-crimsonMaroon text-white border border-crimsonMaroon font-sans text-[11px] font-bold transition active:scale-95"
+          >
+            🎬 Bollywood Sangeet
+          </button>
+          <button
+            type="button"
+            data-tune="sangeet-strings"
+            aria-pressed="false"
+            class="sangeet-tune-btn px-2.5 py-1 rounded-full bg-warmSandal text-sandalwoodDark border border-antiqueGold/60 hover:bg-parchmentGold font-sans text-[11px] font-bold transition active:scale-95"
+          >
+            🎻 Strings
+          </button>
+          <button
+            type="button"
+            data-tune="dholak-beats"
+            aria-pressed="false"
+            class="sangeet-tune-btn px-2.5 py-1 rounded-full bg-warmSandal text-sandalwoodDark border border-antiqueGold/60 hover:bg-parchmentGold font-sans text-[11px] font-bold transition active:scale-95"
+          >
+            🪘 Dholak
+          </button>
+        </div>
+
+        <!-- Dhol Hit Trigger -->
         <button
-          id="top-mode-btn"
+          id="dhol-hit-btn"
           type="button"
-          title="Switch Sangeet Music Mode"
-          class="px-2.5 py-1.5 text-[11px] font-sans font-semibold text-goldShimmer hover:text-white transition truncate max-w-[135px] sm:max-w-[175px]"
+          class="shrink-0 flex items-center gap-1 px-2.5 py-1 rounded-full bg-warmSandal hover:bg-parchmentGold text-crimsonMaroon border border-antiqueGold font-sans text-[11px] font-extrabold transition active:scale-95"
         >
-          🥁 Dhol &amp; Bhangra Groove
+          <span id="dhol-emoji" class="inline-block">🥁</span>
+          <span>Dhol Hit</span>
         </button>
-      </div>
 
-      <!-- Share Button -->
-      <button
-        id="share-sangeet-btn"
-        type="button"
-        aria-label="Share Ladies Sangeet Invitation"
-        class="pointer-events-auto flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-gradient-to-r from-champagneGold to-goldShimmer text-midnightIndigo font-sans font-bold text-xs shadow-xl hover:brightness-105 transition active:scale-95"
-      >
-        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
-        </svg>
-        <span>Share</span>
-      </button>
+        <!-- Compact Volume Slider -->
+        <div class="shrink-0 flex items-center gap-1.5 pl-1.5 pr-1 border-l border-antiqueGold/50">
+          <label for="sangeet-volume" class="font-sans text-[10px] font-extrabold text-sandalwoodDark select-none">
+            Vol
+          </label>
+          <input
+            id="sangeet-volume"
+            type="range"
+            min="0"
+            max="100"
+            value="85"
+            aria-label="Volume Slider"
+            class="w-14 sm:w-16 accent-crimsonMaroon cursor-pointer"
+          />
+          <span id="sangeet-vol-pct" class="font-sans text-[10px] font-extrabold text-crimsonMaroon w-7 text-right">
+            85%
+          </span>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- Floating Bottom-Right "Dance & Sparkle Burst" Button -->
-  <button
-    id="celebration-burst-btn"
-    type="button"
-    class="fixed bottom-5 right-4 z-40 flex items-center gap-2 px-4 py-2.5 rounded-full bg-gradient-to-r from-magentaRose to-dholAmber text-white font-sans font-bold text-xs sm:text-sm shadow-2xl border border-goldShimmer/85 hover:brightness-110 transition active:scale-95"
-  >
-    <span>Sangeet Burst</span>
-    <span class="text-base">🎶</span>
-  </button>
-
-  <!-- Floating Toast Feedback Banner -->
+  <!-- Toast Banner -->
   <div
-    id="toast-banner"
+    id="sangeet-toast"
     role="status"
     aria-live="polite"
-    class="fixed bottom-16 left-1/2 -translate-x-1/2 z-50 px-5 py-2.5 rounded-full bg-midnightIndigo/95 text-goldShimmer border border-champagneGold font-sans text-xs sm:text-sm font-medium shadow-2xl opacity-0 pointer-events-none transition-opacity duration-300 text-center max-w-[90vw]"
+    class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 px-5 py-2 rounded-full bg-crimsonMaroon text-white border border-goldShimmer font-sans text-xs font-semibold shadow-xl opacity-0 pointer-events-none transition-opacity duration-300 text-center max-w-[90vw]"
   >
-    Festive notes showered!
+    Bollywood Sangeet active
   </div>
 
   <!-- ========================================================================
-       MAIN LADIES SANGEET INVITATION CARD
+       MAIN LADIES SANGEET INVITATION CARD (TUESDAY, 1ST DECEMBER, 2026)
   ======================================================================== -->
-  <main class="max-w-xl mx-auto px-3 sm:px-5 pt-16 sm:pt-20 relative z-10">
-    <article id="sangeet-invitation" class="sangeet-card sangeet-filigree rounded-3xl overflow-hidden">
+  <main class="max-w-xl mx-auto px-3 sm:px-5 pt-4 sm:pt-6 relative z-10">
+    <article id="sangeet-invitation-card" class="sangeet-invitation-card antique-gold-frame rounded-3xl overflow-hidden">
 
       <!-- ==================================================================
-           SECTION 1: FESTIVE SANGEET STAGE HEADER & GANESH MANTRA
+           SECTION 1: TOP SANSKRIT INVOCATION & LORD GANESHA EMBLEM
       ================================================================== -->
-      <section class="relative bg-gradient-to-b from-plumVelvet via-royalPlum to-midnightIndigo pt-4 pb-8 px-4 text-center border-b-2 border-champagneGold overflow-hidden">
-        <!-- Decorative Stage Bunting & Gold Garlands -->
-        <svg class="w-full h-11 mb-1" viewBox="0 0 420 46" fill="none" aria-hidden="true">
-          <path d="M0 4 Q52 34 105 4 Q157 34 210 4 Q262 34 315 4 Q367 34 420 4" stroke="#F9E596" stroke-width="2" />
-          <path d="M0 9 Q52 39 105 9 Q157 39 210 9 Q262 39 315 9 Q367 39 420 9" stroke="#D92662" stroke-width="1.3" opacity="0.8" />
-          <circle cx="52" cy="19" r="5.5" fill="#F59E0B" stroke="#F9E596" stroke-width="1.2" />
-          <circle cx="157" cy="19" r="5.5" fill="#D92662" stroke="#F9E596" stroke-width="1.2" />
-          <circle cx="262" cy="19" r="5.5" fill="#F59E0B" stroke="#F9E596" stroke-width="1.2" />
-          <circle cx="367" cy="19" r="5.5" fill="#D92662" stroke="#F9E596" stroke-width="1.2" />
-          <path d="M105 4 L100 23 L105 30 L110 23 Z" fill="#F9E596" />
-          <path d="M210 4 L205 26 L210 34 L215 26 Z" fill="#F9E596" />
-          <path d="M315 4 L310 23 L315 30 L320 23 Z" fill="#F9E596" />
+      <section class="relative bg-gradient-to-b from-crimsonMaroon via-deepMaroon to-sandalwoodDark pt-6 pb-8 px-5 text-center border-b-2 border-antiqueGold overflow-hidden">
+        <!-- Gold Garland Arc -->
+        <svg class="w-full h-9 mb-1 opacity-90" viewBox="0 0 420 36" fill="none" aria-hidden="true">
+          <path d="M12 30 Q60 6 112 28 Q162 6 210 28 Q258 6 308 28 Q360 6 408 30" stroke="#F6DC8C" stroke-width="1.8" />
+          <circle cx="112" cy="28" r="3.5" fill="#FFFDF8" />
+          <circle cx="210" cy="28" r="4.5" fill="#FFFDF8" />
+          <circle cx="308" cy="28" r="3.5" fill="#FFFDF8" />
         </svg>
 
-        <!-- Festive Dhol & Mandala Stage Emblem -->
+        <!-- Ganesha Emblem inside Rotating Halo -->
         <div class="relative flex flex-col items-center justify-center">
-          <div class="relative w-40 h-40 sm:w-44 sm:h-44 flex items-center justify-center">
-            <!-- Rotating Stage Halo -->
-            <svg class="absolute inset-0 w-full h-full stage-mandala opacity-40" viewBox="0 0 200 200" fill="none" aria-hidden="true">
-              <circle cx="100" cy="100" r="92" stroke="#F9E596" stroke-width="1.5" stroke-dasharray="6 4" />
-              <circle cx="100" cy="100" r="76" stroke="#E8998D" stroke-width="1" />
-              <g stroke="#F9E596" stroke-width="1.2">
-                <polygon points="100,5 110,28 90,28" />
-                <polygon points="100,195 110,172 90,172" />
-                <polygon points="5,100 28,90 28,110" />
-                <polygon points="195,100 172,90 172,110" />
-              </g>
+          <div class="relative w-32 h-32 sm:w-36 sm:h-36 flex items-center justify-center mb-2">
+            <svg class="absolute inset-0 w-full h-full halo-turn opacity-40" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+              <circle cx="100" cy="100" r="92" stroke="#F6DC8C" stroke-width="1.4" stroke-dasharray="5 4" />
+              <circle cx="100" cy="100" r="78" stroke="#C6952B" stroke-width="1" />
             </svg>
 
-            <!-- Custom Royal Dhol & Treble Clef Stage Illustration -->
-            <svg class="w-32 h-32 sm:w-36 sm:h-36 relative z-10 drop-shadow-[0_6px_18px_rgba(249,229,150,0.45)]" viewBox="0 0 160 160" fill="none" role="img" aria-label="Festive Dhol and Musical Notes">
+            <svg class="w-24 h-24 sm:w-28 sm:h-28 relative z-10 drop-shadow-[0_4px_12px_rgba(246,220,140,0.42)]" viewBox="0 0 160 160" fill="none" role="img" aria-label="Lord Ganesha Emblem">
               <defs>
-                <linearGradient id="dholGoldGrad" x1="25" y1="35" x2="135" y2="125" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#FFFBEB" />
-                  <stop offset="45%" stop-color="#F9E596" />
-                  <stop offset="80%" stop-color="#D4AF37" />
-                  <stop offset="100%" stop-color="#9A6712" />
+                <linearGradient id="sangeetGaneshGrad" x1="30" y1="20" x2="130" y2="140" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#FFFDF8" />
+                  <stop offset="50%" stop-color="#F6DC8C" />
+                  <stop offset="100%" stop-color="#C6952B" />
                 </linearGradient>
               </defs>
-              <!-- Dhol Drum Body -->
-              <path d="M40 62 C64 74, 96 74, 120 62 L114 106 C90 94, 70 94, 46 106 Z" fill="#D92662" stroke="url(#dholGoldGrad)" stroke-width="3" />
-              <!-- Dhol Heads -->
-              <ellipse cx="43" cy="84" rx="8" ry="23" fill="url(#dholGoldGrad)" stroke="#FFFBEB" stroke-width="1.5" />
-              <ellipse cx="117" cy="84" rx="8" ry="23" fill="url(#dholGoldGrad)" stroke="#FFFBEB" stroke-width="1.5" />
-              <!-- Zig-Zag Dhol Lacing -->
-              <path d="M51 66 L62 100 L73 68 L84 100 L95 68 L106 100" stroke="#F9E596" stroke-width="2.2" fill="none" stroke-linejoin="round" />
-              <!-- Floating Eighth Notes Above Dhol -->
-              <path d="M62 46 V24 L82 20 V42" stroke="#F9E596" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
-              <circle cx="57" cy="46" r="5" fill="#F9E596" />
-              <circle cx="77" cy="42" r="5" fill="#F9E596" />
-              <circle cx="104" cy="34" r="4" fill="#E8998D" />
-              <path d="M108 34 V20 L117 18 V30" stroke="#E8998D" stroke-width="2" stroke-linecap="round" fill="none" />
+              <path d="M64 46 L80 22 L96 46 Z" fill="url(#sangeetGaneshGrad)" />
+              <path d="M58 52 H102 L97 44 H63 Z" fill="url(#sangeetGaneshGrad)" />
+              <circle cx="80" cy="18" r="3.5" fill="#FFFDF8" />
+              <path d="M54 58 C34 54, 30 84, 52 88" stroke="url(#sangeetGaneshGrad)" stroke-width="3.5" fill="rgba(246,220,140,0.14)" stroke-linecap="round" />
+              <path d="M106 58 C126 54, 130 84, 108 88" stroke="url(#sangeetGaneshGrad)" stroke-width="3.5" fill="rgba(246,220,140,0.14)" stroke-linecap="round" />
+              <path d="M55 56 C55 44, 105 44, 105 56 C105 74, 95 86, 80 86 C65 86, 55 74, 55 56 Z" stroke="url(#sangeetGaneshGrad)" stroke-width="3.2" fill="rgba(255,253,248,0.08)" />
+              <path d="M77 53 V64 M83 53 V64 M77 64 Q80 68 83 64" stroke="#FFFDF8" stroke-width="2" stroke-linecap="round" />
+              <circle cx="80" cy="59" r="1.8" fill="#FFFDF8" />
+              <path d="M65 66 Q70 63 74 66" stroke="#FFFDF8" stroke-width="2.2" stroke-linecap="round" />
+              <path d="M86 66 Q90 63 95 66" stroke="#FFFDF8" stroke-width="2.2" stroke-linecap="round" />
+              <path d="M75 74 C75 94, 73 112, 87 115 C96 117, 102 110, 98 103 C95 98, 89 101, 91 106" stroke="url(#sangeetGaneshGrad)" stroke-width="4.5" stroke-linecap="round" fill="none" />
+              <path d="M46 132 Q80 122 114 132 Q98 142 80 142 Q62 142 46 132 Z" fill="url(#sangeetGaneshGrad)" opacity="0.92" />
             </svg>
           </div>
-
-          <!-- Exact Opening Invocation -->
-          <span class="inline-block px-3.5 py-0.5 rounded-full bg-magentaRose/30 border border-goldShimmer/60 font-sans text-[11px] uppercase tracking-[0.2em] text-goldShimmer font-bold mb-2">
-            Ladies Sangeet
-          </span>
 
           <h2 class="font-hindi text-goldShimmer text-xl sm:text-2xl font-bold tracking-wide drop-shadow mb-2.5">
             || श्री गणेशाय नमः ||
           </h2>
 
-          <!-- Exact Vakratunda Mantra Box -->
-          <div class="px-4 py-3.5 rounded-2xl bg-midnightIndigo/85 border border-champagneGold/60 max-w-md mx-auto shadow-inner">
-            <p class="font-hindi text-white text-sm sm:text-base md:text-lg leading-relaxed font-semibold">
-              वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।<br />
-              निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा ||
+          <div class="px-4 py-3.5 rounded-2xl bg-royalIvory text-sandalwoodDark border-2 border-antiqueGold max-w-md mx-auto shadow-md">
+            <p class="font-hindi text-sandalwoodDark text-sm sm:text-base md:text-lg leading-relaxed font-bold">
+              वक्रतुण्ड महाकाय सूर्यकोटि समप्रभः।<br />
+              निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा ।।
             </p>
           </div>
         </div>
       </section>
 
       <!-- ==================================================================
-           SCROLL BODY: HOST, COUPLE, MUSIC DECK, COUNTDOWN, PROGRAMME,
-           VENUE, BLESSING WALL & RSVP, AND FOOTER
+           MAIN CARD BODY
       ================================================================== -->
       <div class="px-5 sm:px-10 py-8 sm:py-10 space-y-8 text-center relative">
 
-        <!-- Corner Filigree Accents -->
-        <svg class="w-9 h-9 text-champagneGold/70 absolute top-3 left-3 pointer-events-none" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-          <path d="M2 38 V10 C2 5.5 5.5 2 10 2 H38" stroke="currentColor" stroke-width="2" />
-          <circle cx="10" cy="10" r="3" fill="#D92662" />
+        <!-- Corner Filigree -->
+        <svg class="w-10 h-10 text-antiqueGold/80 absolute top-3 left-3 pointer-events-none" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <path d="M3 45 V12 C3 6.5 6.5 3 12 3 H45" stroke="currentColor" stroke-width="2" />
+          <circle cx="12" cy="12" r="3" fill="#5E0B1A" />
         </svg>
-        <svg class="w-9 h-9 text-champagneGold/70 absolute top-3 right-3 pointer-events-none" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-          <path d="M38 38 V10 C38 5.5 34.5 2 30 2 H2" stroke="currentColor" stroke-width="2" />
-          <circle cx="30" cy="10" r="3" fill="#D92662" />
+        <svg class="w-10 h-10 text-antiqueGold/80 absolute top-3 right-3 pointer-events-none" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <path d="M45 45 V12 C45 6.5 41.5 3 36 3 H3" stroke="currentColor" stroke-width="2" />
+          <circle cx="36" cy="12" r="3" fill="#5E0B1A" />
         </svg>
 
         <!-- ================================================================
-             SECTION 2: HOST & COUPLE INVITATION WORDING
+             SECTION 2: HOST & COUPLE DETAILS (AUTOMATIC COLOR-SHIFTING NAMES)
         ================================================================ -->
-        <section class="reveal space-y-4">
+        <section class="reveal-block space-y-4">
           <div class="space-y-1">
-            <h2 class="font-playfair text-2xl sm:text-3xl font-bold text-royalPlum tracking-wide">
-              Mrs. Parveen Devi
+            <h2 class="font-cinzel text-2xl sm:text-3xl font-bold text-crimsonMaroon tracking-wide">
+              Smt. Parveen Devi
             </h2>
-            <p class="font-cormorant italic text-lg sm:text-xl font-bold text-magentaRose">
-              (W/o Late Sh. Tarsem Chand Singla)
+            <p class="font-cormorant italic text-lg sm:text-xl font-bold text-sandalwoodDark">
+              (W/o. Late Sh. Tarsem Chand Singla)
             </p>
           </div>
 
-          <p class="font-cormorant italic text-lg sm:text-xl text-stone-800 max-w-md mx-auto leading-relaxed">
-            cordially solicits your gracious presence &amp; blessings on the auspicious occasion of <span class="font-bold not-italic text-royalPlum">Ladies Sangeet</span> on the forthcoming marriage of her loving grand daughter
+          <p class="font-cormorant italic text-lg sm:text-xl text-sandalwoodDark max-w-md mx-auto leading-relaxed font-semibold">
+            cordially solicits your gracious presence &amp; blessings on the auspicious occasion on Ladies Sangeet on the forthcoming marriage of her loving grand daughter
           </p>
 
           <!-- Festive Divider -->
           <div class="flex items-center justify-center gap-3 py-1" aria-hidden="true">
-            <span class="h-px w-16 bg-gradient-to-r from-transparent to-champagneGold"></span>
-            <span class="text-magentaRose text-base">♫</span>
-            <span class="text-champagneGold text-sm">✦</span>
-            <span class="text-magentaRose text-base">♫</span>
-            <span class="h-px w-16 bg-gradient-to-l from-transparent to-champagneGold"></span>
+            <span class="h-px w-14 bg-antiqueGold"></span>
+            <span class="text-crimsonMaroon text-sm font-bold">✦</span>
+            <span class="text-antiqueGold text-base font-bold">✦</span>
+            <span class="text-crimsonMaroon text-sm font-bold">✦</span>
+            <span class="h-px w-14 bg-antiqueGold"></span>
           </div>
 
-          <!-- Bride -->
+          <!-- Bride ("Chehak") -->
           <div>
-            <h1 class="font-display text-4xl sm:text-5xl font-bold sangeet-foil-text py-1 tracking-wide">
+            <h1 class="font-display text-4xl sm:text-5xl font-bold shimmer-couple-name py-1 tracking-wide">
               Chehak
             </h1>
-            <p class="font-cormorant italic text-lg sm:text-xl font-semibold text-royalPlum mt-1">
-              (D/o Mrs. Sheeru Singla &amp; Mr. Vijay Singla)
+            <p class="font-cormorant italic text-lg sm:text-xl font-bold text-sandalwoodDark mt-1">
+              (D/o. Mrs. Sheeru Singla &amp; Mr. Vijay Singla)
             </p>
           </div>
 
           <!-- With -->
           <div class="py-1 flex items-center justify-center gap-3">
-            <span class="h-px w-10 bg-champagneGold/65"></span>
-            <span class="inline-block px-5 py-0.5 rounded-full bg-festiveParchment border border-champagneGold font-script text-3xl text-magentaRose shadow-sm">
+            <span class="h-px w-12 bg-antiqueGold"></span>
+            <span class="inline-block px-5 py-0.5 rounded-full bg-warmSandal border border-antiqueGold font-script text-3xl text-crimsonMaroon shadow-sm">
               with
             </span>
-            <span class="h-px w-10 bg-champagneGold/65"></span>
+            <span class="h-px w-12 bg-antiqueGold"></span>
           </div>
 
-          <!-- Groom -->
+          <!-- Groom ("Laxmikant") -->
           <div>
-            <h1 class="font-display text-4xl sm:text-5xl font-bold sangeet-foil-text py-1 tracking-wide">
+            <h1 class="font-display text-4xl sm:text-5xl font-bold shimmer-couple-name py-1 tracking-wide">
               Laxmikant
             </h1>
-            <p class="font-cormorant italic text-lg sm:text-xl font-semibold text-royalPlum mt-1 max-w-md mx-auto leading-snug">
-              (S/o Mrs. Tanuja &amp; Mr. Govind Madhukar Mukkawar of Ahilyanagar, Maharashtra)
+            <p class="font-cormorant italic text-lg sm:text-xl font-bold text-sandalwoodDark mt-1 max-w-md mx-auto leading-snug">
+              (S/o. Mrs. Tanuja &amp; Mr. Govind Madhukar Mukkawar of Ahilyanagar, Maharashtra)
             </p>
           </div>
         </section>
 
         <!-- ================================================================
-             SECTION 3: SANGEET SOUNDTRACK DECK (3 CELEBRATORY MODES)
+             SECTION 3: LIVE COUNTDOWN TO TUESDAY, 1ST DECEMBER, 2026 (7:30 PM IST)
         ================================================================ -->
-        <section class="reveal rounded-2xl bg-gradient-to-br from-plumVelvet via-royalPlum to-midnightIndigo text-white border-2 border-champagneGold p-5 shadow-xl space-y-4">
-          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-            <div class="text-left">
-              <span class="font-sans text-[10px] uppercase tracking-[0.2em] text-goldShimmer font-bold">
-                Built-In Sangeet DJ Console
-              </span>
-              <h3 id="active-mode-heading" class="font-playfair text-xl sm:text-2xl font-bold text-white">
-                🥁 Dhol &amp; Bhangra Groove
-              </h3>
-            </div>
-
-            <!-- 5-Bar Equalizer Visualizer -->
-            <div id="deck-eq" class="flex items-end justify-center sm:justify-end gap-1 h-6 px-3 py-1 rounded-full bg-midnightIndigo/80 border border-champagneGold/45" aria-hidden="true">
-              <span class="eq-bar w-1 h-1.5 bg-goldShimmer rounded-full"></span>
-              <span class="eq-bar w-1 h-2.5 bg-roseGold rounded-full"></span>
-              <span class="eq-bar w-1 h-2 bg-goldShimmer rounded-full"></span>
-              <span class="eq-bar w-1 h-3 bg-dholAmber rounded-full"></span>
-              <span class="eq-bar w-1 h-1.5 bg-goldShimmer rounded-full"></span>
-            </div>
-          </div>
-
-          <!-- 3 Switchable Celebratory Sangeet Modes -->
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 font-sans text-xs">
-            <button
-              type="button"
-              data-mode="0"
-              class="mode-select-btn px-3 py-2 rounded-xl bg-magentaRose text-white font-bold border border-goldShimmer shadow transition"
-            >
-              🥁 Dhol &amp; Bhangra Groove
-            </button>
-            <button
-              type="button"
-              data-mode="1"
-              class="mode-select-btn px-3 py-2 rounded-xl bg-midnightIndigo/75 text-goldShimmer font-semibold border border-champagneGold/40 hover:border-goldShimmer transition"
-            >
-              🪘 Festive Tabla Rhythm
-            </button>
-            <button
-              type="button"
-              data-mode="2"
-              class="mode-select-btn px-3 py-2 rounded-xl bg-midnightIndigo/75 text-goldShimmer font-semibold border border-champagneGold/40 hover:border-goldShimmer transition"
-            >
-              ✨ Celebratory Sangeet Chimes
-            </button>
-          </div>
-
-          <!-- Play/Pause + Volume Slider -->
-          <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-1 font-sans">
-            <button
-              id="deck-toggle-btn"
-              type="button"
-              class="w-full sm:w-auto px-5 py-2 rounded-full bg-gradient-to-r from-champagneGold to-goldShimmer text-midnightIndigo font-bold text-xs shadow hover:brightness-105 transition active:scale-95"
-            >
-              ▶ Play Sangeet Beat
-            </button>
-
-            <div class="flex items-center gap-2 w-full sm:w-auto justify-center">
-              <label for="volume-slider" class="text-[11px] text-goldShimmer font-semibold shrink-0">
-                🔊 Volume
-              </label>
-              <input
-                id="volume-slider"
-                type="range"
-                min="0"
-                max="100"
-                value="70"
-                class="w-32 accent-dholAmber cursor-pointer"
-              />
-              <span id="volume-readout" class="text-[11px] text-white/85 w-9 text-right font-semibold">70%</span>
-            </div>
-          </div>
-        </section>
-
-        <!-- ================================================================
-             SECTION 4: LIVE COUNTDOWN TO 1ST DECEMBER, 2026 AT 7:30 PM IST
-        ================================================================ -->
-        <section class="reveal rounded-2xl bg-festiveParchment border-2 border-champagneGold/85 p-5 shadow-inner">
-          <p class="font-sans text-[11px] sm:text-xs uppercase tracking-[0.18em] text-magentaRose font-bold mb-3">
-            Countdown to Ladies Sangeet • 1st December, 2026 (7:30 p.m.)
+        <section class="reveal-block rounded-2xl bg-warmSandal border-2 border-antiqueGold p-5 shadow-inner">
+          <p class="font-sans text-[11px] sm:text-xs uppercase tracking-[0.16em] text-crimsonMaroon font-extrabold mb-3">
+            Countdown to Ladies Sangeet • 1st December, 2026 (7:30 PM IST)
           </p>
-          <div id="sangeet-countdown" class="grid grid-cols-4 gap-2 sm:gap-3 max-w-sm mx-auto">
-            <div class="rounded-xl bg-white border border-champagneGold py-2.5 px-1 shadow-sm">
-              <div id="sc-days" class="font-playfair text-2xl sm:text-3xl font-bold text-royalPlum">--</div>
-              <div class="font-sans text-[10px] uppercase tracking-wider text-magentaRose font-bold">Days</div>
+          <div id="sangeet-countdown-grid" class="grid grid-cols-4 gap-2 sm:gap-3 max-w-sm mx-auto">
+            <div class="rounded-xl bg-royalIvory border border-antiqueGold py-2.5 px-1 shadow-sm">
+              <div id="sc-days" class="font-cinzel text-2xl sm:text-3xl font-bold text-sandalwoodDark">--</div>
+              <div class="font-sans text-[10px] uppercase tracking-wider text-crimsonMaroon font-bold">Days</div>
             </div>
-            <div class="rounded-xl bg-white border border-champagneGold py-2.5 px-1 shadow-sm">
-              <div id="sc-hours" class="font-playfair text-2xl sm:text-3xl font-bold text-royalPlum">--</div>
-              <div class="font-sans text-[10px] uppercase tracking-wider text-magentaRose font-bold">Hours</div>
+            <div class="rounded-xl bg-royalIvory border border-antiqueGold py-2.5 px-1 shadow-sm">
+              <div id="sc-hours" class="font-cinzel text-2xl sm:text-3xl font-bold text-sandalwoodDark">--</div>
+              <div class="font-sans text-[10px] uppercase tracking-wider text-crimsonMaroon font-bold">Hours</div>
             </div>
-            <div class="rounded-xl bg-white border border-champagneGold py-2.5 px-1 shadow-sm">
-              <div id="sc-mins" class="font-playfair text-2xl sm:text-3xl font-bold text-royalPlum">--</div>
-              <div class="font-sans text-[10px] uppercase tracking-wider text-magentaRose font-bold">Mins</div>
+            <div class="rounded-xl bg-royalIvory border border-antiqueGold py-2.5 px-1 shadow-sm">
+              <div id="sc-mins" class="font-cinzel text-2xl sm:text-3xl font-bold text-sandalwoodDark">--</div>
+              <div class="font-sans text-[10px] uppercase tracking-wider text-crimsonMaroon font-bold">Mins</div>
             </div>
-            <div class="rounded-xl bg-white border border-champagneGold py-2.5 px-1 shadow-sm">
-              <div id="sc-secs" class="font-playfair text-2xl sm:text-3xl font-bold text-royalPlum">--</div>
-              <div class="font-sans text-[10px] uppercase tracking-wider text-magentaRose font-bold">Secs</div>
+            <div class="rounded-xl bg-royalIvory border border-antiqueGold py-2.5 px-1 shadow-sm">
+              <div id="sc-secs" class="font-cinzel text-2xl sm:text-3xl font-bold text-sandalwoodDark">--</div>
+              <div class="font-sans text-[10px] uppercase tracking-wider text-crimsonMaroon font-bold">Secs</div>
             </div>
           </div>
-          <p id="sangeet-live-msg" class="hidden font-playfair italic text-lg text-magentaRose font-bold mt-2">
-            The Ladies Sangeet Celebration Is Live! 🥁✨
+          <p id="sangeet-live-notice" class="hidden font-cormorant italic text-xl text-crimsonMaroon font-bold mt-2">
+            The Ladies Sangeet Celebrations Have Begun! ✨
           </p>
         </section>
 
         <!-- ================================================================
-             SECTION 5: PROGRAMME CARD (TUESDAY, 1ST DECEMBER, 2026)
+             SECTION 4: PROGRAMME SCHEDULE — TUESDAY, 1ST DECEMBER, 2026
         ================================================================ -->
-        <section class="reveal rounded-2xl bg-white/95 border-2 border-champagneGold p-5 sm:p-7 shadow-md">
-          <span class="inline-block px-4 py-1 rounded-full bg-royalPlum text-goldShimmer font-sans text-xs font-bold tracking-widest uppercase mb-2">
-            Programme
-          </span>
-          <h3 class="font-playfair italic text-2xl sm:text-3xl font-bold text-royalPlum">
-            On Tuesday, 1st December, 2026
-          </h3>
+        <section class="reveal-block space-y-4">
+          <div>
+            <p class="font-cormorant italic text-xl sm:text-2xl text-sandalwoodDark font-bold">
+              as per programme
+            </p>
+            <h3 class="mt-1 font-cormorant italic text-2xl sm:text-3xl font-bold text-crimsonMaroon">
+              On Tuesday, 1st December, 2026
+            </h3>
+          </div>
 
-          <div class="my-5 space-y-3 max-w-sm mx-auto text-left font-cormorant text-xl sm:text-2xl">
-            <div class="flex items-baseline justify-between border-b border-dotted border-champagneGold pb-2">
-              <span class="italic font-semibold text-stone-800">Ladies Sangeet</span>
-              <span class="font-bold text-magentaRose">7:30 p.m.</span>
+          <div class="rounded-2xl bg-royalIvory border-2 border-antiqueGold p-5 sm:p-7 shadow-md max-w-md mx-auto text-left">
+            <div class="space-y-3 font-cormorant text-xl sm:text-2xl">
+              <div class="flex items-baseline justify-between gap-3 border-b border-dotted border-antiqueGold pb-2">
+                <span class="italic font-bold text-sandalwoodDark">Ladies Sangeet</span>
+                <span class="font-bold text-crimsonMaroon shrink-0">7:30 p.m.</span>
+              </div>
+              <div class="flex items-baseline justify-between gap-3">
+                <span class="italic font-bold text-sandalwoodDark">Dinner</span>
+                <span class="font-bold text-crimsonMaroon shrink-0">9:30 p.m.</span>
+              </div>
             </div>
-            <div class="flex items-baseline justify-between border-b border-dotted border-champagneGold pb-2">
-              <span class="italic font-semibold text-stone-800">Dinner</span>
-              <span class="font-bold text-magentaRose">9:30 p.m.</span>
+
+            <div class="mt-5 pt-3 border-t border-antiqueGold/60 text-center font-cormorant text-lg sm:text-xl text-sandalwoodDark space-y-0.5">
+              <p class="italic">at <span class="font-bold not-italic text-crimsonMaroon">A. M. Banquet</span>, Sanour Road, Patiala</p>
             </div>
           </div>
 
-          <p class="font-cormorant italic text-lg sm:text-xl text-stone-800">
-            at <span class="font-bold not-italic text-royalPlum">A. M. Banquet</span>, Sanour Road, Patiala
-          </p>
-
-          <div class="mt-5 flex flex-wrap items-center justify-center gap-2.5">
+          <!-- Add to Calendar (.ics) & Google Maps Directions -->
+          <div class="pt-1 flex flex-wrap items-center justify-center gap-2.5">
             <button
+              id="sangeet-calendar-btn"
               type="button"
-              onclick="downloadSangeetICS()"
-              class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-festiveParchment text-royalPlum border border-champagneGold font-sans text-xs font-bold hover:bg-champagneGold hover:text-midnightIndigo transition active:scale-95"
+              class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-warmSandal text-sandalwoodDark border-2 border-antiqueGold font-sans text-xs font-extrabold hover:bg-parchmentGold transition active:scale-95"
             >
-              <span>📅 Download Calendar (.ics)</span>
+              <span>📅 Add to Calendar (.ics)</span>
             </button>
             <a
               href="https://www.google.com/maps/search/?api=1&query=A.+M.+Banquet+Sanour+Road+Patiala"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-magentaRose text-white font-sans text-xs font-bold shadow hover:brightness-110 transition active:scale-95"
+              class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-crimsonMaroon text-white font-sans text-xs font-bold shadow hover:bg-deepMaroon transition active:scale-95"
             >
               <span>📍 Google Maps Directions</span>
             </a>
@@ -651,160 +598,135 @@
         </section>
 
         <!-- ================================================================
-             SECTION 6: VENUE SPOTLIGHT — A. M. BANQUET, SANOUR ROAD, PATIALA
+             SECTION 5: BLESSING WALL (WITH QUICK BLESSING PILLS & SIDE SELECTOR)
+             AND WHATSAPP RSVP
         ================================================================ -->
-        <section class="reveal rounded-2xl bg-gradient-to-br from-royalPlum via-plumVelvet to-midnightIndigo text-white border-2 border-champagneGold p-6 shadow-xl">
-          <div class="flex flex-col items-center gap-2">
-            <span class="font-sans text-[11px] uppercase tracking-[0.22em] text-goldShimmer font-bold">
-              Celebration Venue
-            </span>
-            <h3 class="font-playfair text-2xl sm:text-3xl font-bold text-goldShimmer">
-              A. M. Banquet
-            </h3>
-            <p class="font-cormorant text-lg sm:text-xl text-white/95">
-              Sanour Road, Patiala
-            </p>
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=A.+M.+Banquet+Sanour+Road+Patiala"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="mt-2 inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-champagneGold to-goldShimmer text-midnightIndigo font-sans font-bold text-xs sm:text-sm shadow-lg hover:brightness-105 transition active:scale-95"
-            >
-              <span>Open in Google Maps</span>
-              <span aria-hidden="true">→</span>
-            </a>
-          </div>
-        </section>
-
-        <!-- ================================================================
-             SECTION 7: LOCAL BLESSING WALL & WHATSAPP RSVP
-        ================================================================ -->
-        <section class="reveal rounded-2xl bg-festiveParchment/95 border-2 border-champagneGold/85 p-5 sm:p-6 text-left shadow-md space-y-4">
+        <section class="reveal-block rounded-2xl bg-warmSandal border-2 border-antiqueGold p-5 sm:p-6 text-left shadow-md space-y-4">
           <div class="text-center">
-            <h3 class="font-playfair text-2xl sm:text-3xl font-bold text-royalPlum">
-              Sangeet Blessing Wall &amp; RSVP
+            <h3 class="font-cinzel text-xl sm:text-2xl font-bold text-crimsonMaroon">
+              Sangeet Blessing Wall &amp; WhatsApp RSVP
             </h3>
-            <p class="font-sans text-xs text-stone-700 mt-1">
-              Leave your celebratory wishes for Chehak &amp; Laxmikant (saved in your browser) or RSVP on WhatsApp.
+            <p class="font-sans text-xs text-sandalwoodDark mt-1">
+              Select a quick blessing pill, choose your family side, post a wish, or RSVP on WhatsApp.
             </p>
           </div>
 
           <form id="sangeet-blessing-form" class="space-y-3.5 font-sans">
-            <div>
-              <label for="sangeet-guest-name" class="block text-[11px] font-bold uppercase tracking-wider text-royalPlum mb-1">
-                Your Name / Family Name
-              </label>
-              <input
-                id="sangeet-guest-name"
-                type="text"
-                required
-                placeholder="e.g. Singla & Garg Parivar"
-                class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-champagneGold/75 text-sm text-royalPlum placeholder-stone-400 focus:outline-none focus:border-magentaRose"
-              />
-            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label for="sangeet-guest-name" class="block text-[11px] font-extrabold uppercase tracking-wider text-sandalwoodDark mb-1">
+                  Your Name / Family Name
+                </label>
+                <input
+                  id="sangeet-guest-name"
+                  type="text"
+                  required
+                  placeholder="e.g. Singla Parivar"
+                  class="w-full px-3.5 py-2.5 rounded-xl bg-royalIvory border border-antiqueGold text-sm text-sandalwoodDark placeholder-stone-400 focus:outline-none focus:border-crimsonMaroon"
+                />
+              </div>
 
-            <div>
-              <span class="block text-[11px] font-bold uppercase tracking-wider text-royalPlum mb-1.5">
-                Ladies Sangeet RSVP (Tuesday, 1st December, 2026)
-              </span>
-              <div class="grid grid-cols-2 gap-2">
-                <label class="cursor-pointer">
-                  <input type="radio" name="sangeet-rsvp" value="Joining Ladies Sangeet & Dinner (1st Dec)" checked class="peer sr-only" />
-                  <div class="text-center py-2 px-2 rounded-xl bg-white border border-champagneGold/70 text-xs font-semibold text-royalPlum peer-checked:bg-magentaRose peer-checked:text-white peer-checked:border-magentaRose transition">
-                    Joining Sangeet Night
-                  </div>
-                </label>
-                <label class="cursor-pointer">
-                  <input type="radio" name="sangeet-rsvp" value="Sending Musical Blessings (1st Dec)" class="peer sr-only" />
-                  <div class="text-center py-2 px-2 rounded-xl bg-white border border-champagneGold/70 text-xs font-semibold text-royalPlum peer-checked:bg-magentaRose peer-checked:text-white peer-checked:border-magentaRose transition">
-                    Sending Blessings
-                  </div>
-                </label>
+              <div>
+                <span class="block text-[11px] font-extrabold uppercase tracking-wider text-sandalwoodDark mb-1">
+                  Family Side
+                </span>
+                <div class="grid grid-cols-2 gap-1.5">
+                  <label class="cursor-pointer">
+                    <input type="radio" name="sangeet-side" value="Bride's Side" checked class="peer sr-only" />
+                    <div class="text-center py-2.5 px-2 rounded-xl bg-royalIvory border border-antiqueGold text-[11px] font-bold text-sandalwoodDark peer-checked:bg-crimsonMaroon peer-checked:text-white peer-checked:border-crimsonMaroon transition">
+                      Bride's Side
+                    </div>
+                  </label>
+                  <label class="cursor-pointer">
+                    <input type="radio" name="sangeet-side" value="Groom's Side" class="peer sr-only" />
+                    <div class="text-center py-2.5 px-2 rounded-xl bg-royalIvory border border-antiqueGold text-[11px] font-bold text-sandalwoodDark peer-checked:bg-crimsonMaroon peer-checked:text-white peer-checked:border-crimsonMaroon transition">
+                      Groom's Side
+                    </div>
+                  </label>
+                </div>
               </div>
             </div>
 
-            <!-- Quick Festive Wish Chips -->
+            <!-- Quick Blessing Pills -->
             <div>
-              <span class="block text-[11px] font-bold uppercase tracking-wider text-royalPlum mb-1.5">
-                Quick Festive Wish (Tap to Insert)
+              <span class="block text-[11px] font-extrabold uppercase tracking-wider text-sandalwoodDark mb-1.5">
+                Quick Blessing Pills
               </span>
               <div class="flex flex-wrap gap-1.5">
                 <button
                   type="button"
-                  class="wish-chip px-2.5 py-1 rounded-full bg-white border border-champagneGold text-[11px] font-hindi font-semibold text-royalPlum hover:bg-champagneGold/25 transition"
-                  data-wish="संगीत संध्या व वैवाहिक जीवन की ढेरों मंगलकामनाएं!"
+                  data-wish="Wishing Chehak & Laxmikant a joyful Ladies Sangeet evening filled with music and blessings!"
+                  class="quick-wish-btn px-2.5 py-1 rounded-full bg-royalIvory hover:bg-parchmentGold text-sandalwoodDark border border-antiqueGold text-[11px] font-semibold transition active:scale-95"
                 >
-                  संगीत संध्या की मंगलकामनाएं
+                  🎶 Music &amp; Joy
                 </button>
                 <button
                   type="button"
-                  class="wish-chip px-2.5 py-1 rounded-full bg-white border border-champagneGold text-[11px] font-semibold text-royalPlum hover:bg-champagneGold/25 transition"
-                  data-wish="Dance, joy, and lifelong blessings to Chehak & Laxmikant!"
+                  data-wish="May Lord Ganesha bless Chehak & Laxmikant with endless happiness and harmony!"
+                  class="quick-wish-btn px-2.5 py-1 rounded-full bg-royalIvory hover:bg-parchmentGold text-sandalwoodDark border border-antiqueGold text-[11px] font-semibold transition active:scale-95"
                 >
-                  Dance, joy &amp; blessings!
+                  ॐ Ganesh Blessings
                 </button>
                 <button
                   type="button"
-                  class="wish-chip px-2.5 py-1 rounded-full bg-white border border-champagneGold text-[11px] font-semibold text-royalPlum hover:bg-champagneGold/25 transition"
-                  data-wish="Wishing you a melodious journey together forever!"
+                  data-wish="Warmest wishes for Chehak & Laxmikant as the celebrations begin on 1st December!"
+                  class="quick-wish-btn px-2.5 py-1 rounded-full bg-royalIvory hover:bg-parchmentGold text-sandalwoodDark border border-antiqueGold text-[11px] font-semibold transition active:scale-95"
                 >
-                  Melodious journey forever!
+                  ✨ Warmest Wishes
                 </button>
               </div>
             </div>
 
             <div>
-              <label for="sangeet-guest-wish" class="block text-[11px] font-bold uppercase tracking-wider text-royalPlum mb-1">
-                Your Wish / Message
+              <label for="sangeet-wish-text" class="block text-[11px] font-extrabold uppercase tracking-wider text-sandalwoodDark mb-1">
+                Your Blessing
               </label>
               <textarea
-                id="sangeet-guest-wish"
+                id="sangeet-wish-text"
                 rows="2"
-                placeholder="Write a celebratory message..."
-                class="w-full px-3.5 py-2 rounded-xl bg-white border border-champagneGold/75 text-sm text-royalPlum placeholder-stone-400 focus:outline-none focus:border-magentaRose"
+                placeholder="Tap a blessing pill above or write your wish..."
+                class="w-full px-3.5 py-2 rounded-xl bg-royalIvory border border-antiqueGold text-sm text-sandalwoodDark placeholder-stone-400 focus:outline-none focus:border-crimsonMaroon"
               ></textarea>
             </div>
 
-            <div class="space-y-2 pt-1">
-              <button
-                type="submit"
-                class="w-full py-2.5 px-4 rounded-xl bg-royalPlum text-goldShimmer font-bold text-xs sm:text-sm shadow hover:bg-plumVelvet transition active:scale-98"
-              >
-                🎶 Save Wish to Blessing Wall
-              </button>
+            <button
+              type="submit"
+              class="w-full py-2.5 px-4 rounded-xl bg-crimsonMaroon text-white font-bold text-xs sm:text-sm shadow hover:bg-deepMaroon transition active:scale-98"
+            >
+              ✨ Post Blessing to Wall
+            </button>
 
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                <button
-                  type="button"
-                  onclick="rsvpOnWhatsApp('919814117173')"
-                  class="py-2.5 px-3 rounded-xl bg-emeraldStage text-white font-semibold text-xs flex items-center justify-center gap-1.5 shadow hover:brightness-110 transition active:scale-98"
-                >
-                  <span>💬 WhatsApp RSVP (98141-17173)</span>
-                </button>
-                <button
-                  type="button"
-                  onclick="rsvpOnWhatsApp('918557040000')"
-                  class="py-2.5 px-3 rounded-xl bg-emeraldStage text-white font-semibold text-xs flex items-center justify-center gap-1.5 shadow hover:brightness-110 transition active:scale-98"
-                >
-                  <span>💬 WhatsApp RSVP (85570-40000)</span>
-                </button>
-              </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
+              <button
+                type="button"
+                data-wa="919814117173"
+                class="sangeet-wa-btn py-2.5 px-3 rounded-xl bg-emeraldRsvp text-white font-bold text-xs shadow hover:brightness-110 transition active:scale-98"
+              >
+                WhatsApp RSVP (98141-17173)
+              </button>
+              <button
+                type="button"
+                data-wa="918557040000"
+                class="sangeet-wa-btn py-2.5 px-3 rounded-xl bg-emeraldRsvp text-white font-bold text-xs shadow hover:brightness-110 transition active:scale-98"
+              >
+                WhatsApp RSVP (85570-40000)
+              </button>
             </div>
           </form>
 
-          <!-- Stored Wishes List -->
-          <div class="pt-3 border-t border-champagneGold/50">
-            <p class="font-sans text-[11px] font-bold uppercase tracking-wider text-royalPlum mb-2">
-              Saved Wishes &amp; Blessings
+          <!-- Posted Blessings -->
+          <div class="pt-3 border-t border-antiqueGold/60">
+            <p class="font-sans text-[11px] font-extrabold uppercase tracking-wider text-sandalwoodDark mb-2">
+              Blessings Wall
             </p>
-            <div id="sangeet-wishes-list" class="space-y-2 max-h-44 overflow-y-auto pr-1">
-              <div class="p-3 rounded-xl bg-white border border-champagneGold/55 text-xs">
-                <div class="flex items-center justify-between font-sans font-bold text-magentaRose">
+            <div id="sangeet-blessings-list" class="space-y-2 max-h-44 overflow-y-auto pr-1">
+              <div class="p-3 rounded-xl bg-royalIvory border border-antiqueGold/70 text-xs">
+                <div class="flex items-center justify-between gap-2 font-sans font-bold text-crimsonMaroon">
                   <span>Dadke &amp; Nanke Parivar</span>
-                  <span class="text-[10px] text-royalPlum bg-festiveParchment px-2 py-0.5 rounded-full">1st Dec, 2026</span>
+                  <span class="text-[10px] text-sandalwoodDark bg-warmSandal px-2 py-0.5 rounded-full shrink-0">Bride's Side</span>
                 </div>
-                <p class="font-cormorant italic text-base text-stone-800 mt-1">
-                  “May the beats of Sangeet fill Chehak &amp; Laxmikant's life with endless harmony and joy!”
+                <p class="font-cormorant italic text-base text-sandalwoodDark mt-1">
+                  “Wishing Chehak &amp; Laxmikant a joyful Ladies Sangeet evening filled with music and blessings!”
                 </p>
               </div>
             </div>
@@ -812,55 +734,74 @@
         </section>
 
         <!-- ================================================================
-             SECTION 8: FOOTER (R.S.V.P. & WITH WARM REGARDS — NO FAMILY FLOWERS)
+             SECTION 6: SANGEET NIGHT STAGE & LIGHTS BOTTOM ANIMATION
+             (Animated Spotlights/Stage Beams, Dancing Musical Notes, Swaying
+              Festive Garlands, Twinkling Stage Stars/Sparkles & Confetti/
+              Spotlight Burst Button)
         ================================================================ -->
-        <footer class="reveal pt-1">
+        <section class="reveal-block rounded-2xl bg-gradient-to-b from-crimsonMaroon/95 to-stageMidnight text-white border-2 border-antiqueGold p-5 sm:p-6 shadow-xl space-y-3.5">
+          <div class="space-y-1">
+            <p class="font-sans text-[10px] sm:text-xs uppercase tracking-[0.22em] text-goldShimmer font-bold">
+              Tuesday, 1st December, 2026 • 7:30 p.m.
+            </p>
+            <h3 class="font-cinzel text-xl sm:text-2xl font-bold text-goldShimmer tracking-wide">
+              Sangeet Night Stage &amp; Lights
+            </h3>
+            <p class="font-cormorant italic text-base sm:text-lg text-warmSandal/95 max-w-md mx-auto">
+              Tap or click the Sangeet stage to dance with musical notes, swaying garlands, spotlights &amp; stars.
+            </p>
+          </div>
+
+          <!-- Interactive Sangeet Stage Canvas -->
+          <div class="relative w-full">
+            <canvas id="sangeet-stage-canvas" aria-label="Sangeet Night Stage & Lights Animation"></canvas>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-center gap-2.5 pt-1 font-sans">
+            <button
+              id="sangeet-burst-btn"
+              type="button"
+              class="px-5 py-2.5 rounded-full bg-gradient-to-r from-antiqueGold to-goldShimmer text-sandalwoodDark font-extrabold text-xs sm:text-sm shadow-lg hover:brightness-105 transition active:scale-95"
+            >
+              🎉 Launch Sangeet Confetti &amp; Spotlight Burst
+            </button>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SECTION 7: R. S. V. P. & WITH WARMS REGARDS (NO FAMILY FLOWERS)
+        ================================================================ -->
+        <footer class="reveal-block pt-1">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center sm:text-left">
             <!-- R. S. V. P. -->
-            <div class="rounded-2xl bg-festiveParchment border border-champagneGold/75 p-4 space-y-2">
-              <p class="font-playfair italic font-bold text-lg text-magentaRose">R. S. V. P.</p>
-              <p class="font-cormorant italic font-bold text-xl text-royalPlum">Dadke &amp; Nanke</p>
-
-              <div class="flex items-center justify-center sm:justify-start gap-2 pt-0.5">
-                <a
-                  href="tel:+919814117173"
-                  class="inline-flex items-center gap-1.5 font-sans text-xs sm:text-sm font-bold text-royalPlum hover:text-magentaRose transition"
-                >
-                  <span class="w-6 h-6 rounded-full bg-royalPlum text-goldShimmer flex items-center justify-center text-xs">📞</span>
-                  <span>Mob.: 98141-17173</span>
-                </a>
-                <button
-                  type="button"
-                  onclick="copyNumber('98141-17173')"
-                  class="px-2 py-0.5 rounded-md bg-white border border-champagneGold font-sans text-[10px] font-semibold text-royalPlum hover:bg-champagneGold hover:text-midnightIndigo transition"
-                >
-                  Copy
-                </button>
-              </div>
-
-              <div class="flex items-center justify-center sm:justify-start gap-2">
-                <a
-                  href="tel:+918557040000"
-                  class="inline-flex items-center gap-1.5 font-sans text-xs sm:text-sm font-bold text-royalPlum hover:text-magentaRose transition"
-                >
-                  <span class="w-6 h-6 rounded-full bg-royalPlum text-goldShimmer flex items-center justify-center text-xs">📞</span>
-                  <span>85570-40000</span>
-                </a>
-                <button
-                  type="button"
-                  onclick="copyNumber('85570-40000')"
-                  class="px-2 py-0.5 rounded-md bg-white border border-champagneGold font-sans text-[10px] font-semibold text-royalPlum hover:bg-champagneGold hover:text-midnightIndigo transition"
-                >
-                  Copy
-                </button>
+            <div class="rounded-2xl bg-warmSandal border-2 border-antiqueGold p-4 space-y-2">
+              <p class="font-cinzel font-bold text-base sm:text-lg text-crimsonMaroon">
+                R. S. V. P.
+              </p>
+              <p class="font-cormorant italic font-bold text-xl text-sandalwoodDark">
+                Dadke &amp; Nanke
+              </p>
+              <div class="space-y-1.5 pt-0.5 font-sans text-xs sm:text-sm font-extrabold text-sandalwoodDark">
+                <div>
+                  <a href="tel:+919814117173" class="hover:text-crimsonMaroon underline decoration-antiqueGold transition">
+                    Mob.: 98141-17173
+                  </a>
+                </div>
+                <div>
+                  <a href="tel:+918557040000" class="hover:text-crimsonMaroon underline decoration-antiqueGold transition">
+                    85570-40000
+                  </a>
+                </div>
               </div>
             </div>
 
-            <!-- With Warm Regards -->
-            <div class="rounded-2xl bg-festiveParchment border border-champagneGold/75 p-4 flex flex-col justify-center text-center sm:text-right space-y-1">
-              <p class="font-playfair italic font-bold text-lg text-magentaRose">With Warm Regards:</p>
-              <p class="font-cormorant italic font-bold text-xl sm:text-2xl text-royalPlum leading-snug">
-                All Relatives<br />&amp; friends
+            <!-- With Warms Regards -->
+            <div class="rounded-2xl bg-warmSandal border-2 border-antiqueGold p-4 flex flex-col justify-center text-center sm:text-right space-y-1">
+              <p class="font-cinzel font-bold text-base sm:text-lg text-crimsonMaroon">
+                With Warms Regards:
+              </p>
+              <p class="font-cormorant italic font-bold text-xl sm:text-2xl text-sandalwoodDark leading-snug">
+                All Relatives &amp; friends
               </p>
             </div>
           </div>
@@ -873,176 +814,277 @@
   <script>
     /**
      * ========================================================================
-     * 1. WEB AUDIO API CELEBRATORY SANGEET SOUNDTRACK ENGINE
-     *    Modes:
-     *      0 -> "Dhol & Bhangra Groove"
-     *      1 -> "Festive Tabla Rhythm"
-     *      2 -> "Celebratory Sangeet Chimes"
+     * 1. WEB AUDIO API BOLLYWOOD SANGEET ENGINE (NO EXTERNAL AUDIO FILES):
+     *    - 'bollywood-sangeet' : Upbeat Bollywood synth-brass/lead + dhol
+     *                            rhythm + warm chords (default on open)
+     *    - 'sangeet-strings'   : Expressive strings & dhol pulse
+     *    - 'dholak-beats'    : Rhythmic dholak & chatti percussion pattern
      * ========================================================================
      */
-    class SangeetAudioEngine {
+    class BollywoodSangeetAudio {
       constructor() {
         this.ctx = null;
+        this.compressor = null;
         this.masterGain = null;
         this.isPlaying = false;
-        this.modeIndex = 0;
+        this.tune = 'bollywood-sangeet';
         this.step = 0;
         this.timer = null;
-        this.volume = 0.7;
+        this.volume = 0.85;
 
-        this.modes = [
-          {
-            label: '🥁 Dhol & Bhangra Groove',
-            shortLabel: '🥁 Dhol & Bhangra Groove',
-            intervalMs: 260,
-            // Bhangra-inspired celebratory scale notes (D4, E4, F#4, G4, A4, B4, D5)
-            melody: [293.66, 369.99, 440.00, 440.00, 392.00, 440.00, 587.33, 493.88, 440.00, 369.99, 392.00, 440.00],
-          },
-          {
-            label: '🪘 Festive Tabla Rhythm',
-            shortLabel: '🪘 Festive Tabla Rhythm',
-            intervalMs: 240,
-            // Teentaal / festive folk cadence
-            melody: [261.63, 329.63, 392.00, 440.00, 392.00, 349.23, 329.63, 293.66, 392.00, 440.00, 523.25, 392.00],
-          },
-          {
-            label: '✨ Celebratory Sangeet Chimes',
-            shortLabel: '✨ Celebratory Sangeet Chimes',
-            intervalMs: 320,
-            // Sparkling bell & plucked sangeet motif
-            melody: [523.25, 659.25, 783.99, 1046.50, 880.00, 783.99, 659.25, 587.33, 659.25, 783.99, 880.00, 1046.50],
-          },
+        // Upbeat Bollywood Sangeet melody (D major festive filmi motif)
+        this.bollywoodMelody = [
+          { lead: 587.33, chord: [293.66, 369.99, 440.00], dhol: 'dha', dur: 0.28 },
+          { lead: 659.25, chord: [293.66, 369.99, 440.00], dhol: 'ti',  dur: 0.28 },
+          { lead: 739.99, chord: [329.63, 392.00, 493.88], dhol: 'ge',  dur: 0.28 },
+          { lead: 880.00, chord: [329.63, 392.00, 493.88], dhol: 'na',  dur: 0.34 },
+          { lead: 739.99, chord: [220.00, 329.63, 440.00], dhol: 'dha', dur: 0.28 },
+          { lead: 659.25, chord: [220.00, 329.63, 440.00], dhol: 'ti',  dur: 0.28 },
+          { lead: 587.33, chord: [293.66, 369.99, 440.00], dhol: 'dha', dur: 0.42 },
+          { lead: 659.25, chord: [293.66, 369.99, 440.00], dhol: 'na',  dur: 0.32 },
+        ];
+
+        // Expressive Strings phrase
+        this.stringsPhrase = [
+          { freq: 440.00, dur: 0.46 },
+          { freq: 493.88, dur: 0.42 },
+          { freq: 587.33, dur: 0.56 },
+          { freq: 739.99, dur: 0.52 },
+          { freq: 659.25, dur: 0.46 },
+          { freq: 587.33, dur: 0.44 },
+          { freq: 493.88, dur: 0.44 },
+          { freq: 440.00, dur: 0.62 },
+        ];
+
+        // Rhythmic Dholak pattern
+        this.dholakPattern = [
+          { stroke: 'dha', dur: 0.25 },
+          { stroke: 'ti',  dur: 0.25 },
+          { stroke: 'ge',  dur: 0.25 },
+          { stroke: 'na',  dur: 0.25 },
+          { stroke: 'dha', dur: 0.25 },
+          { stroke: 'dha', dur: 0.25 },
+          { stroke: 'ti',  dur: 0.25 },
+          { stroke: 'na',  dur: 0.25 },
         ];
       }
 
-      ensureContext() {
+      ensureAudio() {
         try {
           if (!this.ctx) {
-            const AudioContextClass = window.AudioContext || window.webkitAudioContext;
-            this.ctx = new AudioContextClass();
+            const AudioCtx = window.AudioContext || window.webkitAudioContext;
+            this.ctx = new AudioCtx();
+
+            this.compressor = this.ctx.createDynamicsCompressor();
+            this.compressor.threshold.setValueAtTime(-13, this.ctx.currentTime);
+            this.compressor.ratio.setValueAtTime(6, this.ctx.currentTime);
+
             this.masterGain = this.ctx.createGain();
-            this.masterGain.gain.setValueAtTime(this.volume * 0.6, this.ctx.currentTime);
+            this.masterGain.gain.setValueAtTime(this.volume * 0.9, this.ctx.currentTime);
+
+            this.compressor.connect(this.masterGain);
             this.masterGain.connect(this.ctx.destination);
           }
           if (this.ctx.state === 'suspended') {
             this.ctx.resume();
           }
         } catch (err) {
-          // Audio context unavailable
+          // AudioContext unavailable in current browser environment
         }
       }
 
       setVolume(percent) {
         this.volume = Math.max(0, Math.min(1, percent / 100));
         if (this.masterGain && this.ctx) {
-          this.masterGain.gain.setTargetAtTime(this.volume * 0.6, this.ctx.currentTime, 0.04);
+          this.masterGain.gain.setTargetAtTime(this.volume * 0.9, this.ctx.currentTime, 0.04);
         }
       }
 
-      // Deep booming Dhol bass hit ("Dha")
-      triggerDholBoom(heavy = true) {
-        if (!this.ctx || !this.masterGain) return;
+      triggerDholStroke(stroke = 'dha', boost = 1) {
+        this.ensureAudio();
+        if (!this.ctx || !this.compressor) return;
         try {
           const now = this.ctx.currentTime;
-          const osc = this.ctx.createOscillator();
-          const gain = this.ctx.createGain();
-          osc.type = 'sine';
-          osc.frequency.setValueAtTime(heavy ? 128 : 155, now);
-          osc.frequency.exponentialRampToValueAtTime(42, now + 0.22);
 
-          gain.gain.setValueAtTime(0.001, now);
-          gain.gain.linearRampToValueAtTime(heavy ? 0.42 : 0.24, now + 0.012);
-          gain.gain.exponentialRampToValueAtTime(0.0008, now + 0.26);
+          // Deep dhol / dholak bass membrane
+          const bassOsc = this.ctx.createOscillator();
+          const bassEnv = this.ctx.createGain();
+          const isHeavy = stroke === 'dha' || stroke === 'ge';
+          bassOsc.type = 'sine';
+          bassOsc.frequency.setValueAtTime(isHeavy ? 112 : 148, now);
+          bassOsc.frequency.exponentialRampToValueAtTime(isHeavy ? 52 : 76, now + 0.16);
 
-          osc.connect(gain);
-          gain.connect(this.masterGain);
-          osc.start(now);
-          osc.stop(now + 0.28);
+          const bassPeak = (isHeavy ? 0.36 : 0.22) * boost;
+          bassEnv.gain.setValueAtTime(0.001, now);
+          bassEnv.gain.linearRampToValueAtTime(bassPeak, now + 0.01);
+          bassEnv.gain.exponentialRampToValueAtTime(0.0008, now + 0.24);
+
+          bassOsc.connect(bassEnv);
+          bassEnv.connect(this.compressor);
+          bassOsc.start(now);
+          bassOsc.stop(now + 0.26);
+
+          // High treble chatti / tabla slap
+          const trebleOsc = this.ctx.createOscillator();
+          const trebleFilter = this.ctx.createBiquadFilter();
+          const trebleEnv = this.ctx.createGain();
+          trebleOsc.type = 'triangle';
+          trebleOsc.frequency.setValueAtTime(stroke === 'na' ? 420 : 310, now);
+          trebleOsc.frequency.exponentialRampToValueAtTime(190, now + 0.09);
+
+          trebleFilter.type = 'bandpass';
+          trebleFilter.frequency.setValueAtTime(1350, now);
+
+          trebleEnv.gain.setValueAtTime(0.001, now);
+          trebleEnv.gain.linearRampToValueAtTime(0.18 * boost, now + 0.006);
+          trebleEnv.gain.exponentialRampToValueAtTime(0.0006, now + 0.12);
+
+          trebleOsc.connect(trebleFilter);
+          trebleFilter.connect(trebleEnv);
+          trebleEnv.connect(this.compressor);
+          trebleOsc.start(now);
+          trebleOsc.stop(now + 0.14);
         } catch (err) {}
       }
 
-      // Crisp Dhol / Tabla edge rim stroke ("Ti" / "Na")
-      triggerTablaRim() {
-        if (!this.ctx || !this.masterGain) return;
+      playBollywoodLead(freq, chordFreqs, dur) {
+        if (!this.ctx || !this.compressor) return;
         try {
           const now = this.ctx.currentTime;
-          const osc = this.ctx.createOscillator();
-          const gain = this.ctx.createGain();
-          osc.type = 'triangle';
-          osc.frequency.setValueAtTime(340, now);
-          osc.frequency.exponentialRampToValueAtTime(195, now + 0.09);
 
-          gain.gain.setValueAtTime(0.001, now);
-          gain.gain.linearRampToValueAtTime(0.18, now + 0.008);
-          gain.gain.exponentialRampToValueAtTime(0.0008, now + 0.12);
+          // Festive Bollywood lead voice
+          const leadOsc = this.ctx.createOscillator();
+          const filter = this.ctx.createBiquadFilter();
+          const env = this.ctx.createGain();
 
-          osc.connect(gain);
-          gain.connect(this.masterGain);
-          osc.start(now);
-          osc.stop(now + 0.14);
+          leadOsc.type = 'sawtooth';
+          leadOsc.frequency.setValueAtTime(freq, now);
+
+          filter.type = 'lowpass';
+          filter.frequency.setValueAtTime(2200, now);
+          filter.frequency.exponentialRampToValueAtTime(1150, now + dur);
+
+          env.gain.setValueAtTime(0.001, now);
+          env.gain.linearRampToValueAtTime(0.22, now + 0.025);
+          env.gain.exponentialRampToValueAtTime(0.0008, now + dur + 0.06);
+
+          leadOsc.connect(filter);
+          filter.connect(env);
+          env.connect(this.compressor);
+          leadOsc.start(now);
+          leadOsc.stop(now + dur + 0.08);
+
+          // Warm harmonic chord pad
+          if (Array.isArray(chordFreqs)) {
+            chordFreqs.forEach((cFreq) => {
+              const cOsc = this.ctx.createOscillator();
+              const cEnv = this.ctx.createGain();
+              cOsc.type = 'triangle';
+              cOsc.frequency.setValueAtTime(cFreq, now);
+              cEnv.gain.setValueAtTime(0.0008, now);
+              cEnv.gain.linearRampToValueAtTime(0.065, now + 0.04);
+              cEnv.gain.exponentialRampToValueAtTime(0.0005, now + dur + 0.08);
+              cOsc.connect(cEnv);
+              cEnv.connect(this.compressor);
+              cOsc.start(now);
+              cOsc.stop(now + dur + 0.1);
+            });
+          }
         } catch (err) {}
       }
 
-      // Bright celebratory chime or brass/folk lead note
-      triggerCelebratoryNote(freq, isChime) {
-        if (!this.ctx || !this.masterGain) return;
+      playStringsNote(freq, dur) {
+        if (!this.ctx || !this.compressor) return;
         try {
           const now = this.ctx.currentTime;
-          const osc = this.ctx.createOscillator();
-          const gain = this.ctx.createGain();
-          osc.type = isChime ? 'sine' : 'triangle';
-          osc.frequency.setValueAtTime(freq, now);
+          [1, 1.004, 2].forEach((mult, idx) => {
+            const osc = this.ctx.createOscillator();
+            const env = this.ctx.createGain();
+            osc.type = idx === 2 ? 'sine' : 'sawtooth';
+            osc.frequency.setValueAtTime(freq * mult, now);
 
-          gain.gain.setValueAtTime(0.001, now);
-          gain.gain.linearRampToValueAtTime(isChime ? 0.16 : 0.14, now + 0.015);
-          gain.gain.exponentialRampToValueAtTime(0.0008, now + (isChime ? 0.55 : 0.24));
+            const lp = this.ctx.createBiquadFilter();
+            lp.type = 'lowpass';
+            lp.frequency.setValueAtTime(1600, now);
 
-          osc.connect(gain);
-          gain.connect(this.masterGain);
-          osc.start(now);
-          osc.stop(now + (isChime ? 0.58 : 0.26));
+            env.gain.setValueAtTime(0.0008, now);
+            env.gain.linearRampToValueAtTime(idx === 2 ? 0.08 : 0.14, now + 0.12);
+            env.gain.exponentialRampToValueAtTime(0.0005, now + dur + 0.16);
+
+            osc.connect(lp);
+            lp.connect(env);
+            env.connect(this.compressor);
+            osc.start(now);
+            osc.stop(now + dur + 0.2);
+          });
         } catch (err) {}
       }
 
-      tick() {
-        if (!this.isPlaying || !this.ctx) return;
-        const mode = this.modes[this.modeIndex];
-        const idx = this.step % mode.melody.length;
-        const freq = mode.melody[idx];
+      runStep() {
+        if (!this.isPlaying) return;
 
-        if (this.modeIndex === 0) {
-          // Dhol & Bhangra Groove: strong dhol accents + energetic rim + folk melody
-          if (idx % 4 === 0) this.triggerDholBoom(true);
-          else if (idx % 2 === 0) this.triggerTablaRim();
-          else this.triggerDholBoom(false);
-          this.triggerCelebratoryNote(freq, false);
-        } else if (this.modeIndex === 1) {
-          // Festive Tabla Rhythm: crisp tabla strokes & warm melodic motif
-          if (idx % 4 === 0) this.triggerDholBoom(false);
-          this.triggerTablaRim();
-          this.triggerCelebratoryNote(freq * 0.75, false);
+        if (this.tune === 'bollywood-sangeet') {
+          const item = this.bollywoodMelody[this.step % this.bollywoodMelody.length];
+          this.playBollywoodLead(item.lead, item.chord, item.dur);
+          this.triggerDholStroke(item.dhol, 0.85);
+          this.step++;
+          this.timer = setTimeout(() => this.runStep(), item.dur * 1000);
+        } else if (this.tune === 'sangeet-strings') {
+          const item = this.stringsPhrase[this.step % this.stringsPhrase.length];
+          this.playStringsNote(item.freq, item.dur);
+          if (this.step % 2 === 0) this.triggerDholStroke('dha', 0.65);
+          this.step++;
+          this.timer = setTimeout(() => this.runStep(), item.dur * 1000);
+        } else if (this.tune === 'dholak-beats') {
+          const item = this.dholakPattern[this.step % this.dholakPattern.length];
+          this.triggerDholStroke(item.stroke, 1.1);
+          this.step++;
+          this.timer = setTimeout(() => this.runStep(), item.dur * 1000);
+        }
+      }
+
+      setTune(newTune) {
+        if (!['bollywood-sangeet', 'sangeet-strings', 'dholak-beats'].includes(newTune)) return;
+        this.ensureAudio();
+        this.tune = newTune;
+        this.step = 0;
+
+        document.querySelectorAll('.sangeet-tune-btn').forEach((btn) => {
+          const active = btn.getAttribute('data-tune') === newTune;
+          btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+          btn.className = active
+            ? 'sangeet-tune-btn px-2.5 py-1 rounded-full bg-crimsonMaroon text-white border border-crimsonMaroon font-sans text-[11px] font-bold transition active:scale-95'
+            : 'sangeet-tune-btn px-2.5 py-1 rounded-full bg-warmSandal text-sandalwoodDark border border-antiqueGold/60 hover:bg-parchmentGold font-sans text-[11px] font-bold transition active:scale-95';
+        });
+
+        const tuneNames = {
+          'bollywood-sangeet': 'Bollywood Sangeet',
+          'sangeet-strings': 'Strings',
+          'dholak-beats': 'Dholak',
+        };
+
+        if (this.isPlaying) {
+          clearTimeout(this.timer);
+          this.runStep();
         } else {
-          // Celebratory Sangeet Chimes: shimmering bells + gentle festive pulse
-          if (idx % 4 === 0) this.triggerDholBoom(false);
-          this.triggerCelebratoryNote(freq, true);
+          this.play();
         }
 
-        this.step++;
-        this.timer = setTimeout(() => this.tick(), mode.intervalMs);
+        showToast(`Playing: ${tuneNames[newTune]}`);
       }
 
       play() {
-        this.ensureContext();
+        this.ensureAudio();
         if (this.isPlaying) return;
         this.isPlaying = true;
-        this.tick();
-        updateMusicUI(true);
+        this.runStep();
+        syncPlayState(true);
       }
 
       pause() {
         this.isPlaying = false;
         clearTimeout(this.timer);
-        updateMusicUI(false);
+        syncPlayState(false);
       }
 
       toggle() {
@@ -1052,149 +1094,111 @@
           this.play();
         }
       }
-
-      setMode(index) {
-        this.ensureContext();
-        this.modeIndex = index % this.modes.length;
-        this.step = 0;
-        const currentMode = this.modes[this.modeIndex];
-
-        document.getElementById('active-mode-heading').textContent = currentMode.label;
-        document.getElementById('top-mode-btn').textContent = currentMode.shortLabel;
-
-        document.querySelectorAll('.mode-select-btn').forEach((btn, i) => {
-          if (i === this.modeIndex) {
-            btn.className = 'mode-select-btn px-3 py-2 rounded-xl bg-magentaRose text-white font-bold border border-goldShimmer shadow transition';
-          } else {
-            btn.className = 'mode-select-btn px-3 py-2 rounded-xl bg-midnightIndigo/75 text-goldShimmer font-semibold border border-champagneGold/40 hover:border-goldShimmer transition';
-          }
-        });
-
-        if (!this.isPlaying) {
-          this.play();
-        } else {
-          clearTimeout(this.timer);
-          this.tick();
-        }
-        showToast(`Switched to ${currentMode.label}`);
-      }
-
-      cycleMode() {
-        this.setMode((this.modeIndex + 1) % this.modes.length);
-      }
     }
 
-    const sangeetAudio = new SangeetAudioEngine();
+    const sangeetAudio = new BollywoodSangeetAudio();
 
-    function updateMusicUI(playing) {
-      const topLabel = document.getElementById('top-play-label');
-      const deckBtn = document.getElementById('deck-toggle-btn');
-      const topEq = document.getElementById('top-eq');
-      const deckEq = document.getElementById('deck-eq');
-
+    function syncPlayState(playing) {
+      const btn = document.getElementById('sangeet-play-btn');
+      const label = document.getElementById('sangeet-play-label');
+      const eq = document.getElementById('sangeet-eq');
+      btn.setAttribute('aria-pressed', playing ? 'true' : 'false');
       if (playing) {
-        topLabel.textContent = 'Pause';
-        deckBtn.textContent = '⏸ Pause Sangeet Beat';
-        topEq.classList.add('beat-active');
-        deckEq.classList.add('beat-active');
+        label.textContent = 'Pause';
+        eq.classList.add('sangeet-playing');
       } else {
-        topLabel.textContent = 'Play Beat';
-        deckBtn.textContent = '▶ Play Sangeet Beat';
-        topEq.classList.remove('beat-active');
-        deckEq.classList.remove('beat-active');
+        label.textContent = 'Play';
+        eq.classList.remove('sangeet-playing');
       }
     }
 
     /**
      * ========================================================================
-     * 2. FLOATING MUSICAL NOTES & GOLD SPARKLES CANVAS
+     * 2. FULL-VIEWPORT SANGEET CONFETTI & GOLDEN SPARKLES CANVAS
      * ========================================================================
      */
-    class SangeetNotesCanvas {
+    class FestiveConfettiOverlay {
       constructor(canvasId) {
         this.canvas = document.getElementById(canvasId);
         this.ctx = this.canvas.getContext('2d');
-        this.items = [];
-        this.width = 0;
-        this.height = 0;
-        this.notesGlyphs = ['♪', '♫', '♬'];
-        this.colors = ['#F9E596', '#E8998D', '#F59E0B', '#FF6B9D'];
+        this.pieces = [];
+        this.w = 0;
+        this.h = 0;
         this.resize();
         window.addEventListener('resize', () => this.resize());
-        this.seed(26);
+        this.seedSparkles(18);
         this.loop();
       }
 
       resize() {
-        this.width = this.canvas.width = window.innerWidth;
-        this.height = this.canvas.height = window.innerHeight;
+        this.w = this.canvas.width = window.innerWidth;
+        this.h = this.canvas.height = window.innerHeight;
       }
 
-      makeItem(burst = false) {
-        const isSparkle = !burst && Math.random() < 0.45;
-        return {
-          x: Math.random() * this.width,
-          y: burst ? this.height * (0.35 + Math.random() * 0.45) : Math.random() * this.height,
-          vx: (Math.random() - 0.5) * (burst ? 4.2 : 0.9),
-          vy: burst ? -(2.2 + Math.random() * 3.8) : -(0.55 + Math.random() * 0.85),
-          size: isSparkle ? Math.random() * 2.6 + 1.5 : Math.random() * 9 + 13,
-          glyph: this.notesGlyphs[Math.floor(Math.random() * this.notesGlyphs.length)],
-          color: this.colors[Math.floor(Math.random() * this.colors.length)],
-          sway: Math.random() * Math.PI * 2,
-          isSparkle,
-          burst,
-          alpha: isSparkle ? 0.75 : 0.55,
-        };
-      }
-
-      seed(n) {
-        for (let i = 0; i < n; i++) {
-          this.items.push(this.makeItem(false));
+      seedSparkles(count) {
+        for (let i = 0; i < count; i++) {
+          this.pieces.push({
+            x: Math.random() * this.w,
+            y: Math.random() * this.h,
+            vx: (Math.random() - 0.5) * 0.45,
+            vy: 0.3 + Math.random() * 0.45,
+            w: 3,
+            h: 3,
+            angle: Math.random() * Math.PI * 2,
+            spin: 0.03,
+            color: '#F6DC8C',
+            life: 1,
+            decay: 0,
+            ambient: true,
+          });
         }
       }
 
-      burstCelebration(n = 36) {
-        for (let i = 0; i < n; i++) {
-          this.items.push(this.makeItem(true));
+      launchConfetti(count = 75) {
+        const palette = ['#F6DC8C', '#C6952B', '#9D174D', '#F59E0B', '#FFFDF8'];
+        for (let i = 0; i < count; i++) {
+          this.pieces.push({
+            x: Math.random() * this.w,
+            y: -15 - Math.random() * 140,
+            vx: (Math.random() - 0.5) * 3.2,
+            vy: 2.0 + Math.random() * 3.2,
+            w: 6 + Math.random() * 5,
+            h: 4 + Math.random() * 4,
+            angle: Math.random() * Math.PI * 2,
+            spin: (Math.random() - 0.5) * 0.12,
+            color: palette[Math.floor(Math.random() * palette.length)],
+            life: 1,
+            decay: 0.0045 + Math.random() * 0.004,
+            ambient: false,
+          });
         }
       }
 
       loop() {
-        this.ctx.clearRect(0, 0, this.width, this.height);
+        this.ctx.clearRect(0, 0, this.w, this.h);
 
-        for (let i = this.items.length - 1; i >= 0; i--) {
-          const it = this.items[i];
-          it.sway += 0.035;
-          it.x += it.vx + Math.sin(it.sway) * 0.45;
-          it.y += it.vy;
-          if (it.burst) {
-            it.vy += 0.06; // Gentle gravity arc on burst
-            it.alpha -= 0.012;
-          }
+        for (let i = this.pieces.length - 1; i >= 0; i--) {
+          const p = this.pieces[i];
+          p.angle += p.spin;
+          p.x += p.vx + Math.sin(p.angle) * 0.4;
+          p.y += p.vy;
+          if (!p.ambient) p.life -= p.decay;
 
           this.ctx.save();
-          this.ctx.globalAlpha = Math.max(0, it.alpha);
-
-          if (it.isSparkle) {
-            this.ctx.beginPath();
-            this.ctx.arc(it.x, it.y, it.size, 0, Math.PI * 2);
-            this.ctx.fillStyle = it.color;
-            this.ctx.shadowColor = '#F9E596';
-            this.ctx.shadowBlur = 8;
-            this.ctx.fill();
-          } else {
-            this.ctx.font = `bold ${Math.round(it.size)}px serif`;
-            this.ctx.fillStyle = it.color;
-            this.ctx.fillText(it.glyph, it.x, it.y);
-          }
-
+          this.ctx.translate(p.x, p.y);
+          this.ctx.rotate(p.angle);
+          this.ctx.globalAlpha = p.ambient ? 0.55 : Math.max(0, p.life);
+          this.ctx.fillStyle = p.color;
+          this.ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
           this.ctx.restore();
 
-          if (it.burst && (it.alpha <= 0 || it.y > this.height + 40)) {
-            this.items.splice(i, 1);
-          } else if (!it.burst && it.y < -30) {
-            it.y = this.height + 20;
-            it.x = Math.random() * this.width;
+          if (p.y > this.h + 25 || (!p.ambient && p.life <= 0)) {
+            if (p.ambient) {
+              p.y = -12;
+              p.x = Math.random() * this.w;
+            } else {
+              this.pieces.splice(i, 1);
+            }
           }
         }
 
@@ -1202,68 +1206,228 @@
       }
     }
 
-    let notesCanvas = null;
-
     /**
      * ========================================================================
-     * 3. STAGE CURTAIN ENTRANCE & INTERACTIVE TAP BURST
+     * 3. SANGEET NIGHT STAGE & LIGHTS BOTTOM ANIMATION CANVAS
+     *    - Animated spotlights / stage beams sweeping across the floor
+     *    - Dancing musical notes rising & bobbing
+     *    - Swaying festive garlands along the top of the stage
+     *    - Twinkling stage stars & sparkles
      * ========================================================================
      */
-    let stageCurtainOpened = false;
-    function raiseStageCurtain() {
-      if (stageCurtainOpened) return;
-      stageCurtainOpened = true;
+    class SangeetNightStage {
+      constructor(canvasId) {
+        this.canvas = document.getElementById(canvasId);
+        this.ctx = this.canvas.getContext('2d');
+        this.w = 0;
+        this.h = 0;
+        this.time = 0;
+        this.notes = [];
+        this.stageStars = [];
+        this.syncSize();
+        window.addEventListener('resize', () => this.syncSize());
+        this.initStageStars(34);
+        this.spawnNoteBurst(10);
+        this.loop();
+      }
 
-      sangeetAudio.play();
-      if (notesCanvas) notesCanvas.burstCelebration(45);
+      syncSize() {
+        const rect = this.canvas.getBoundingClientRect();
+        const width = Math.max(260, Math.floor(rect.width || this.canvas.parentElement.clientWidth || 500));
+        const height = 255;
+        this.w = this.canvas.width = width;
+        this.h = this.canvas.height = height;
+      }
 
-      const overlay = document.getElementById('stage-entrance');
-      const content = document.getElementById('entrance-stage-content');
-      content.style.opacity = '0';
-      overlay.classList.add('stage-open');
+      initStageStars(count) {
+        this.stageStars = [];
+        for (let i = 0; i < count; i++) {
+          this.stageStars.push({
+            x: Math.random() * this.w,
+            y: 26 + Math.random() * (this.h * 0.72),
+            r: 1.0 + Math.random() * 2.0,
+            phase: Math.random() * Math.PI * 2,
+            speed: 0.04 + Math.random() * 0.05,
+          });
+        }
+      }
 
-      setTimeout(() => {
-        overlay.style.display = 'none';
-      }, 1450);
-    }
+      spawnNoteBurst(count = 8, xOrigin, yOrigin) {
+        const glyphs = ['♪', '♫', '♬'];
+        const colors = ['#F6DC8C', '#F472B6', '#FBBF24', '#FFFDF8'];
+        for (let i = 0; i < count; i++) {
+          this.notes.push({
+            glyph: glyphs[i % glyphs.length],
+            color: colors[i % colors.length],
+            x: typeof xOrigin === 'number'
+              ? Math.max(24, Math.min(this.w - 24, xOrigin + (Math.random() - 0.5) * 44))
+              : 30 + Math.random() * Math.max(40, this.w - 60),
+            y: typeof yOrigin === 'number'
+              ? Math.max(45, Math.min(this.h - 24, yOrigin + (Math.random() - 0.5) * 24))
+              : this.h - 26 - Math.random() * 25,
+            vy: -(0.75 + Math.random() * 0.85),
+            swayPhase: Math.random() * Math.PI * 2,
+            size: 16 + Math.random() * 8,
+            alpha: 1,
+          });
+        }
+      }
 
-    function spawnTapBurst(x, y) {
-      const icons = ['♪', '♫', '✨', '🌸'];
-      for (let i = 0; i < 6; i++) {
-        const span = document.createElement('span');
-        span.className = 'burst-particle text-sm sm:text-base font-bold';
-        span.textContent = icons[i % icons.length];
-        span.style.color = i % 2 === 0 ? '#D92662' : '#D4AF37';
-        const angle = (Math.PI * 2 * i) / 6;
-        const dist = 30 + Math.random() * 24;
-        span.style.left = `${x}px`;
-        span.style.top = `${y}px`;
-        span.style.setProperty('--tx', `${Math.cos(angle) * dist}px`);
-        span.style.setProperty('--ty', `${Math.sin(angle) * dist}px`);
-        document.body.appendChild(span);
-        setTimeout(() => span.remove(), 920);
+      drawSpotlights() {
+        const beams = [
+          { originX: this.w * 0.22, angle: Math.sin(this.time * 0.025) * 0.26 - 0.12, color: 'rgba(244, 114, 182, 0.20)' },
+          { originX: this.w * 0.50, angle: Math.cos(this.time * 0.02) * 0.22, color: 'rgba(246, 220, 140, 0.24)' },
+          { originX: this.w * 0.78, angle: Math.sin(this.time * 0.025 + 1.4) * 0.26 + 0.12, color: 'rgba(198, 149, 43, 0.20)' },
+        ];
+
+        beams.forEach((b) => {
+          this.ctx.save();
+          this.ctx.translate(b.originX, 16);
+          this.ctx.rotate(b.angle);
+
+          const grad = this.ctx.createLinearGradient(0, 0, 0, this.h - 20);
+          grad.addColorStop(0, b.color);
+          grad.addColorStop(1, 'rgba(246, 220, 140, 0)');
+
+          this.ctx.fillStyle = grad;
+          this.ctx.beginPath();
+          this.ctx.moveTo(-10, 0);
+          this.ctx.lineTo(10, 0);
+          this.ctx.lineTo(76, this.h - 20);
+          this.ctx.lineTo(-76, this.h - 20);
+          this.ctx.closePath();
+          this.ctx.fill();
+          this.ctx.restore();
+        });
+      }
+
+      drawSwayingGarland() {
+        const swayOffset = Math.sin(this.time * 0.045) * 5;
+        const segments = 7;
+        const stepW = this.w / segments;
+
+        this.ctx.save();
+        this.ctx.strokeStyle = '#F6DC8C';
+        this.ctx.lineWidth = 2;
+        this.ctx.beginPath();
+        for (let i = 0; i <= segments; i++) {
+          const x = i * stepW;
+          const sag = (i % 2 === 0 ? 10 : 22) + swayOffset * (i % 2 === 0 ? 0.5 : 1);
+          if (i === 0) this.ctx.moveTo(x, sag);
+          else this.ctx.lineTo(x, sag);
+        }
+        this.ctx.stroke();
+
+        // Marigold blooms along garland
+        for (let i = 0; i < segments; i++) {
+          const x = i * stepW + stepW * 0.5;
+          const y = 22 + swayOffset;
+          this.ctx.fillStyle = i % 2 === 0 ? '#F59E0B' : '#EC4899';
+          this.ctx.beginPath();
+          this.ctx.arc(x, y, 5.5, 0, Math.PI * 2);
+          this.ctx.fill();
+        }
+        this.ctx.restore();
+      }
+
+      loop() {
+        this.time++;
+        this.ctx.clearRect(0, 0, this.w, this.h);
+
+        // Twinkling stage stars
+        for (let i = 0; i < this.stageStars.length; i++) {
+          const st = this.stageStars[i];
+          st.phase += st.speed;
+          const twinkle = 0.25 + 0.75 * ((Math.sin(st.phase) + 1) * 0.5);
+          this.ctx.save();
+          this.ctx.globalAlpha = twinkle;
+          this.ctx.fillStyle = i % 3 === 0 ? '#F6DC8C' : '#FFFDF8';
+          this.ctx.beginPath();
+          this.ctx.arc(st.x, st.y, st.r, 0, Math.PI * 2);
+          this.ctx.fill();
+          this.ctx.restore();
+        }
+
+        // Animated party spotlights / stage beams
+        this.drawSpotlights();
+
+        // Swaying marigold garlands
+        this.drawSwayingGarland();
+
+        // Dancing musical notes
+        for (let i = this.notes.length - 1; i >= 0; i--) {
+          const n = this.notes[i];
+          n.swayPhase += 0.08;
+          n.y += n.vy;
+          n.x += Math.sin(n.swayPhase) * 1.1;
+          if (n.y < 52) n.alpha -= 0.02;
+
+          this.ctx.save();
+          this.ctx.globalAlpha = Math.max(0, n.alpha);
+          this.ctx.font = `bold ${n.size}px sans-serif`;
+          this.ctx.fillStyle = n.color;
+          this.ctx.fillText(n.glyph, n.x, n.y);
+          this.ctx.restore();
+
+          if (n.alpha <= 0 || n.y < 20) {
+            this.notes.splice(i, 1);
+          }
+        }
+
+        if (this.notes.length < 4) {
+          this.spawnNoteBurst(2);
+        }
+
+        requestAnimationFrame(() => this.loop());
       }
     }
 
+    let confettiOverlay = null;
+    let sangeetStage = null;
+
     /**
      * ========================================================================
-     * 4. COUNTDOWN TO TUESDAY, 1ST DECEMBER, 2026 AT 7:30 PM IST
+     * 4. SLIDING CURTAIN REVEAL ("OPEN SANGEET INVITATION")
+     * ========================================================================
+     */
+    let curtainParted = false;
+    function openSangeetCurtain() {
+      if (curtainParted) return;
+      curtainParted = true;
+
+      sangeetAudio.setTune('bollywood-sangeet');
+      if (confettiOverlay) confettiOverlay.launchConfetti(42);
+      if (sangeetStage) sangeetStage.spawnNoteBurst(10);
+
+      const overlay = document.getElementById('sangeet-curtain-overlay');
+      const center = document.getElementById('curtain-center');
+      center.style.opacity = '0';
+      overlay.classList.add('curtains-parted');
+
+      setTimeout(() => {
+        overlay.style.display = 'none';
+      }, 1400);
+    }
+
+    /**
+     * ========================================================================
+     * 5. LIVE COUNTDOWN TO TUESDAY, 1ST DECEMBER, 2026 AT 7:30 PM IST
      * ========================================================================
      */
     function initSangeetCountdown() {
-      const target = new Date('2026-12-01T19:30:00+05:30').getTime();
+      const targetTime = new Date('2026-12-01T19:30:00+05:30').getTime();
 
-      function updateTimer() {
-        const rem = target - Date.now();
-        if (rem <= 0) {
-          document.getElementById('sangeet-countdown').classList.add('hidden');
-          document.getElementById('sangeet-live-msg').classList.remove('hidden');
+      function tick() {
+        const diff = targetTime - Date.now();
+        if (diff <= 0) {
+          document.getElementById('sangeet-countdown-grid').classList.add('hidden');
+          document.getElementById('sangeet-live-notice').classList.remove('hidden');
           return;
         }
-        const days = Math.floor(rem / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((rem / (1000 * 60 * 60)) % 24);
-        const mins = Math.floor((rem / (1000 * 60)) % 60);
-        const secs = Math.floor((rem / 1000) % 60);
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const mins = Math.floor((diff / (1000 * 60)) % 60);
+        const secs = Math.floor((diff / 1000) % 60);
 
         document.getElementById('sc-days').textContent = String(days).padStart(2, '0');
         document.getElementById('sc-hours').textContent = String(hours).padStart(2, '0');
@@ -1271,34 +1435,33 @@
         document.getElementById('sc-secs').textContent = String(secs).padStart(2, '0');
       }
 
-      updateTimer();
-      setInterval(updateTimer, 1000);
+      tick();
+      setInterval(tick, 1000);
     }
 
     /**
      * ========================================================================
-     * 5. DOWNLOADABLE .ICS CALENDAR EVENT FOR 1ST DECEMBER LADIES SANGEET
+     * 6. ADD TO CALENDAR (.ICS) FOR 1ST DECEMBER, 2026 LADIES SANGEET
      * ========================================================================
      */
     function downloadSangeetICS() {
-      // 7:30 PM IST (14:00 UTC) to 11:00 PM IST (17:30 UTC) on Dec 1, 2026
-      const icsContent = [
+      const ics = [
         'BEGIN:VCALENDAR',
         'VERSION:2.0',
-        'PRODID:-//Chehak & Laxmikant Ladies Sangeet//EN',
+        'PRODID:-//Chehak & Laxmikant Ladies Sangeet 1st Dec 2026//EN',
         'CALSCALE:GREGORIAN',
         'BEGIN:VEVENT',
-        'SUMMARY:Ladies Sangeet — Chehak & Laxmikant',
+        'SUMMARY:Ladies Sangeet & Dinner — Chehak & Laxmikant',
         'DTSTART:20261201T140000Z',
         'DTEND:20261201T173000Z',
         'LOCATION:A. M. Banquet, Sanour Road, Patiala',
-        'DESCRIPTION:Mrs. Parveen Devi cordially solicits your gracious presence & blessings on the auspicious occasion of Ladies Sangeet on Tuesday, 1st December, 2026 (Ladies Sangeet: 7:30 p.m., Dinner: 9:30 p.m.) at A. M. Banquet, Sanour Road, Patiala.',
+        'DESCRIPTION:On Tuesday, 1st December, 2026 — Ladies Sangeet: 7:30 p.m., Dinner: 9:30 p.m. at A. M. Banquet, Sanour Road, Patiala.',
         'END:VEVENT',
         'END:VCALENDAR',
       ].join('\r\n');
 
       try {
-        const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+        const blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' });
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
@@ -1307,18 +1470,18 @@
         a.click();
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
-        showToast('Ladies Sangeet calendar invite downloaded!');
+        showToast('Sangeet calendar invite (.ics) downloaded!');
       } catch (err) {
-        showToast('Could not download calendar invite on this browser.');
+        showToast('Calendar download unavailable here.');
       }
     }
 
     /**
      * ========================================================================
-     * 6. LOCAL BLESSING WALL & WHATSAPP RSVP
+     * 7. BLESSING WALL (QUICK PILLS + SIDE SELECTOR + LOCALSTORAGE) & WHATSAPP RSVP
      * ========================================================================
      */
-    function escapeHTML(str) {
+    function escapeSafe(str) {
       return str.replace(/[&<>"']/g, (ch) => ({
         '&': '&amp;',
         '<': '&lt;',
@@ -1328,191 +1491,173 @@
       }[ch]));
     }
 
-    function initBlessingWall() {
+    function initSangeetBlessingWall() {
       const form = document.getElementById('sangeet-blessing-form');
-      const list = document.getElementById('sangeet-wishes-list');
-      const wishInput = document.getElementById('sangeet-guest-wish');
+      const list = document.getElementById('sangeet-blessings-list');
+      const wishInput = document.getElementById('sangeet-wish-text');
 
-      document.querySelectorAll('.wish-chip').forEach((chip) => {
-        chip.addEventListener('click', () => {
-          wishInput.value = chip.getAttribute('data-wish') || '';
+      document.querySelectorAll('.quick-wish-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          wishInput.value = btn.getAttribute('data-wish') || '';
           wishInput.focus();
+          showToast('Quick blessing selected');
         });
       });
 
       try {
-        const saved = JSON.parse(localStorage.getItem('cl_sangeet_1dec_wishes') || '[]');
-        saved.forEach((entry) => appendWishCard(list, entry.name, entry.rsvp, entry.wish));
+        const saved = JSON.parse(localStorage.getItem('cl_sangeet_1dec_blessings') || '[]');
+        saved.forEach((item) => renderSangeetWish(list, item.name, item.side, item.wish));
       } catch (err) {}
 
       form.addEventListener('submit', (e) => {
         e.preventDefault();
-        const nameField = document.getElementById('sangeet-guest-name');
-        const name = nameField.value.trim();
-        const rsvp = document.querySelector('input[name="sangeet-rsvp"]:checked').value;
-        const wish = wishInput.value.trim() || 'Wishing Chehak & Laxmikant a joyful Ladies Sangeet!';
+        const nameInput = document.getElementById('sangeet-guest-name');
+        const name = nameInput.value.trim();
+        const side = document.querySelector('input[name="sangeet-side"]:checked').value;
+        const wish = wishInput.value.trim() || 'Wishing Chehak & Laxmikant a joyful Ladies Sangeet evening filled with music and blessings!';
 
         if (!name) return;
 
-        appendWishCard(list, name, rsvp, wish);
+        renderSangeetWish(list, name, side, wish);
 
         try {
-          const current = JSON.parse(localStorage.getItem('cl_sangeet_1dec_wishes') || '[]');
-          current.unshift({ name, rsvp, wish });
-          localStorage.setItem('cl_sangeet_1dec_wishes', JSON.stringify(current.slice(0, 25)));
+          const existing = JSON.parse(localStorage.getItem('cl_sangeet_1dec_blessings') || '[]');
+          existing.unshift({ name, side, wish });
+          localStorage.setItem('cl_sangeet_1dec_blessings', JSON.stringify(existing.slice(0, 25)));
         } catch (err) {}
 
-        nameField.value = '';
+        nameInput.value = '';
         wishInput.value = '';
-        if (notesCanvas) notesCanvas.burstCelebration(30);
-        showToast('Your wish has been saved to the Blessing Wall! 🎶');
+        sangeetAudio.triggerDholStroke('dha', 1.0);
+        if (confettiOverlay) confettiOverlay.launchConfetti(28);
+        showToast('Blessing posted to Sangeet wall!');
+      });
+
+      document.querySelectorAll('.sangeet-wa-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const phone = btn.getAttribute('data-wa');
+          const guest = document.getElementById('sangeet-guest-name').value.trim() || 'Well-Wisher';
+          const side = document.querySelector('input[name="sangeet-side"]:checked').value;
+          const note = wishInput.value.trim();
+
+          let msg =
+            `|| श्री गणेशाय नमः ||\n` +
+            `Warmest wishes for *Chehak & Laxmikant's Ladies Sangeet* on *Tuesday, 1st December, 2026* (Ladies Sangeet: 7:30 p.m., Dinner: 9:30 p.m.) at *A. M. Banquet, Sanour Road, Patiala*.\n\n` +
+            `*Name:* ${guest}\n` +
+            `*Family Side:* ${side}\n`;
+          if (note) msg += `*Blessings:* ${note}\n`;
+
+          window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener,noreferrer');
+        });
       });
     }
 
-    function appendWishCard(container, name, rsvp, wish) {
-      const card = document.createElement('div');
-      card.className = 'p-3 rounded-xl bg-white border border-champagneGold/60 text-xs shadow-sm';
-      card.innerHTML = `
-        <div class="flex items-center justify-between gap-2 font-sans font-bold text-magentaRose">
-          <span>${escapeHTML(name)}</span>
-          <span class="text-[10px] text-royalPlum bg-festiveParchment px-2 py-0.5 rounded-full shrink-0">${escapeHTML(rsvp)}</span>
+    function renderSangeetWish(container, name, side, wish) {
+      const div = document.createElement('div');
+      div.className = 'p-3 rounded-xl bg-royalIvory border border-antiqueGold/70 text-xs shadow-sm';
+      div.innerHTML = `
+        <div class="flex items-center justify-between gap-2 font-sans font-bold text-crimsonMaroon">
+          <span>${escapeSafe(name)}</span>
+          <span class="text-[10px] text-sandalwoodDark bg-warmSandal px-2 py-0.5 rounded-full shrink-0">${escapeSafe(side)}</span>
         </div>
-        <p class="font-cormorant italic text-base text-stone-800 mt-1">“${escapeHTML(wish)}”</p>
+        <p class="font-cormorant italic text-base text-sandalwoodDark mt-1">“${escapeSafe(wish)}”</p>
       `;
-      container.prepend(card);
-    }
-
-    function rsvpOnWhatsApp(phone) {
-      const name = document.getElementById('sangeet-guest-name').value.trim() || 'Well-Wisher';
-      const rsvp = document.querySelector('input[name="sangeet-rsvp"]:checked').value;
-      const wish = document.getElementById('sangeet-guest-wish').value.trim();
-
-      let message =
-        `|| श्री गणेशाय नमः ||\n` +
-        `Warmest wishes for the *Ladies Sangeet* of *Chehak & Laxmikant* (Tuesday, 1st December, 2026 at 7:30 p.m.)!\n\n` +
-        `*Guest:* ${name}\n` +
-        `*RSVP:* ${rsvp}\n`;
-      if (wish) message += `*Blessings:* ${wish}\n`;
-
-      window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+      container.prepend(div);
     }
 
     /**
      * ========================================================================
-     * 7. SHARE INVITATION, COPY PHONE & TOAST FEEDBACK
+     * 8. TOAST & SCROLL REVEAL INITIALIZATION
      * ========================================================================
      */
-    function copyNumber(num) {
-      const ta = document.createElement('textarea');
-      ta.value = num;
-      document.body.appendChild(ta);
-      ta.select();
-      try {
-        document.execCommand('copy');
-        showToast(`Copied ${num}`);
-      } catch (err) {
-        showToast(`Number: ${num}`);
-      }
-      document.body.removeChild(ta);
-    }
-
-    function shareSangeetInvite() {
-      const summary =
-        '|| श्री गणेशाय नमः ||\n' +
-        'Mrs. Parveen Devi cordially solicits your gracious presence & blessings on the auspicious occasion of Ladies Sangeet on the forthcoming marriage of her loving grand daughter Chehak with Laxmikant.\n' +
-        '• Tuesday, 1st December, 2026\n' +
-        '• Ladies Sangeet: 7:30 p.m.\n' +
-        '• Dinner: 9:30 p.m.\n' +
-        '• Venue: A. M. Banquet, Sanour Road, Patiala\n' +
-        '• R.S.V.P.: Dadke & Nanke — Mob.: 98141-17173, 85570-40000\n' +
-        '• With Warm Regards: All Relatives & friends';
-
-      if (navigator.share) {
-        navigator.share({
-          title: 'Ladies Sangeet — Chehak & Laxmikant (1st December, 2026)',
-          text: summary,
-          url: window.location.href,
-        }).catch(() => {});
-      } else {
-        const ta = document.createElement('textarea');
-        ta.value = `${summary}\n${window.location.href}`;
-        document.body.appendChild(ta);
-        ta.select();
-        try {
-          document.execCommand('copy');
-          showToast('Sangeet invitation & link copied!');
-        } catch (err) {
-          showToast('Copy the link from your browser address bar.');
-        }
-        document.body.removeChild(ta);
-      }
-    }
-
     let toastTimeout = null;
     function showToast(text) {
-      const toast = document.getElementById('toast-banner');
+      const toast = document.getElementById('sangeet-toast');
       toast.textContent = text;
       toast.classList.remove('opacity-0');
       clearTimeout(toastTimeout);
       toastTimeout = setTimeout(() => {
         toast.classList.add('opacity-0');
-      }, 2700);
+      }, 2200);
     }
 
-    function initRevealObserver() {
-      const io = new IntersectionObserver(
+    function initScrollReveals() {
+      const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              entry.target.classList.add('in-view');
+              entry.target.classList.add('visible');
             }
           });
         },
         { threshold: 0.1 }
       );
-      document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+      document.querySelectorAll('.reveal-block').forEach((el) => observer.observe(el));
     }
 
     window.addEventListener('DOMContentLoaded', () => {
-      notesCanvas = new SangeetNotesCanvas('sangeet-canvas');
-      initRevealObserver();
+      confettiOverlay = new FestiveConfettiOverlay('festive-confetti-canvas');
+      sangeetStage = new SangeetNightStage('sangeet-stage-canvas');
+      initScrollReveals();
       initSangeetCountdown();
-      initBlessingWall();
+      initSangeetBlessingWall();
 
-      const entrance = document.getElementById('stage-entrance');
-      entrance.addEventListener('click', raiseStageCurtain);
-      entrance.addEventListener('touchstart', raiseStageCurtain, { passive: true });
+      // Sliding Curtain Entrance
+      const overlay = document.getElementById('sangeet-curtain-overlay');
+      overlay.addEventListener('click', openSangeetCurtain);
+      overlay.addEventListener('touchstart', openSangeetCurtain, { passive: true });
+      document.getElementById('open-sangeet-btn').addEventListener('click', (e) => {
+        e.stopPropagation();
+        openSangeetCurtain();
+      });
 
-      document.getElementById('sangeet-play-btn').addEventListener('click', () => sangeetAudio.toggle());
-      document.getElementById('top-mode-btn').addEventListener('click', () => sangeetAudio.cycleMode());
-      document.getElementById('deck-toggle-btn').addEventListener('click', () => sangeetAudio.toggle());
+      // Audio Controls
+      document.getElementById('sangeet-play-btn').addEventListener('click', () => {
+        sangeetAudio.toggle();
+      });
 
-      document.querySelectorAll('.mode-select-btn').forEach((btn) => {
+      document.querySelectorAll('.sangeet-tune-btn').forEach((btn) => {
         btn.addEventListener('click', () => {
-          const idx = parseInt(btn.getAttribute('data-mode') || '0', 10);
-          sangeetAudio.setMode(idx);
+          sangeetAudio.setTune(btn.getAttribute('data-tune'));
         });
       });
 
-      const slider = document.getElementById('volume-slider');
-      const readout = document.getElementById('volume-readout');
-      slider.addEventListener('input', () => {
-        const val = parseInt(slider.value, 10);
-        readout.textContent = `${val}%`;
+      document.getElementById('dhol-hit-btn').addEventListener('click', () => {
+        sangeetAudio.triggerDholStroke('dha', 1.25);
+        const emoji = document.getElementById('dhol-emoji');
+        emoji.classList.remove('dhol-thump');
+        void emoji.offsetWidth;
+        emoji.classList.add('dhol-thump');
+        if (sangeetStage) sangeetStage.spawnNoteBurst(6);
+        showToast('🥁 Dhol hit!');
+      });
+
+      const volSlider = document.getElementById('sangeet-volume');
+      const volPct = document.getElementById('sangeet-vol-pct');
+      volSlider.addEventListener('input', () => {
+        const val = parseInt(volSlider.value, 10);
+        volPct.textContent = `${val}%`;
         sangeetAudio.setVolume(val);
       });
 
-      document.getElementById('share-sangeet-btn').addEventListener('click', shareSangeetInvite);
-      document.getElementById('celebration-burst-btn').addEventListener('click', () => {
-        if (notesCanvas) notesCanvas.burstCelebration(45);
-        sangeetAudio.ensureContext();
-        sangeetAudio.triggerDholBoom(true);
-        showToast('Sangeet notes & gold sparkles showered! 🥁');
+      // Calendar (.ics) Download
+      document.getElementById('sangeet-calendar-btn').addEventListener('click', downloadSangeetICS);
+
+      // Sangeet Night Stage Burst & Tap Interaction
+      document.getElementById('sangeet-burst-btn').addEventListener('click', () => {
+        sangeetAudio.triggerDholStroke('dha', 1.2);
+        confettiOverlay.launchConfetti(85);
+        sangeetStage.spawnNoteBurst(14);
+        showToast('🎉 Sangeet confetti & spotlight burst!');
       });
 
-      document.getElementById('sangeet-invitation').addEventListener('click', (e) => {
-        if (e.target.closest('button, a, input, textarea, label')) return;
-        spawnTapBurst(e.clientX, e.clientY);
+      const stageCanvas = document.getElementById('sangeet-stage-canvas');
+      stageCanvas.addEventListener('click', (e) => {
+        const rect = stageCanvas.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        sangeetAudio.triggerDholStroke('dha', 1.0);
+        sangeetStage.spawnNoteBurst(7, x, y);
       });
     });
   </script>
